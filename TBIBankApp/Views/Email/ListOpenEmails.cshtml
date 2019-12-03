@@ -1,0 +1,166 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<User> usermanager
+@model TBIBankApp.Models.Emails.EmailListModel
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" type="text/css" href="~/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="~/css/customTable.css" />
+
+
+<table id="example" class="display1" style="width:100%">
+    <thead>
+        <tr>
+
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Open since</th>
+            <th>Updated by</th>
+            <th>Body</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.EmailViewModels)
+        {
+            @if (item.IsOpne)
+            {
+                <tr id="@item.Id+classID" style="background-color:#999593">
+                    <th>@item.ReferenceNumber</th>
+                    <td>@item.RegisteredInDataBase</td>
+                    <td>@item.Sender</td>
+                    <td>@item.Subject</td>
+                    <td>@item.Status</td>
+                    <td>@item.LastStatusUpdate</td>
+                    <td>@item.User.UserName</td>
+                    <td>
+
+                        <button type="button" class="btn btn-primary" disabled id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                            Application Preview
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade @item.Id" id="@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 align="center" class="modal-title text-center" id="exampleModalLabel"></h5>
+                                        <div id="@item.Id+timerId"></div>
+
+                                        <button type="button" value="@item.Id" class="close" data-dismiss="modal" onclick="SetButtonToEnable(this.value)" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="divWrapper">@Html.Raw(item.Body)</div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        @if (User.IsInRole("Manager"))
+                                        {
+                                            <button type="button" class="btn btn-secondary buttonsTest2" value="@item.Id" onclick="SetReject(this.value)" data-dismiss="modal">Reject</button>
+                                            <button type="button" class="btn btn-light buttonsTest2" data-dismiss="modal" value="@item.Id" onclick="SetNew(this.value)">Set to New</button>
+                                            <button type="button" class="btn btn-primary buttonsTest2" value="@item.Id" onclick="SetAccept(this.value)" data-dismiss="modal">Accept</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="btn btn-secondary buttonsTest3" value="@item.Id" onclick="SetReject(this.value)" data-dismiss="modal" style="background-color:red">Reject</button>
+                                            <button type="button" class="btn btn-secondary buttonsTest3" value="@item.Id" onclick="SetAccept(this.value)" data-dismiss="modal" style="background-color:green">Accept</button>
+
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                </tr>
+            }
+            else
+            {
+                <tr id="@item.Id+classID" >
+                    <th>@item.ReferenceNumber</th>
+                    <td>@item.RegisteredInDataBase</td>
+                    <td>@item.Sender</td>
+                    <td>@item.Subject</td>
+                    <td>@item.Status</td>
+                    <td>@item.LastStatusUpdate</td>
+                    <td>@item.User.UserName</td>
+                    <td>
+
+                        <button type="button" class="btn btn-primary" id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                            Application Preview
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade @item.Id" id="@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 align="center" class="modal-title text-center" id="exampleModalLabel"></h5>
+                                        <div id="@item.Id+timerId"></div>
+
+                                        <button type="button" value="@item.Id" class="close" data-dismiss="modal" onclick="SetButtonToEnable(this.value)" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="divWrapper">@Html.Raw(item.Body)</div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        @if (User.IsInRole("Manager"))
+                                        {
+                                            <button type="button" class="btn btn-secondary buttonsTest2" value="@item.Id" onclick="SetReject(this.value)" data-dismiss="modal">Reject</button>
+                                            <button type="button" class="btn btn-light buttonsTest2" data-dismiss="modal" value="@item.Id" onclick="SetNew(this.value)">Set to New</button>
+                                            <button type="button" class="btn btn-primary buttonsTest2" value="@item.Id" onclick="SetAccept(this.value)" data-dismiss="modal">Accept</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="btn btn-secondary buttonsTest3" value="@item.Id" onclick="SetReject(this.value)" data-dismiss="modal" style="background-color:red">Reject</button>
+                                            <button type="button" class="btn btn-secondary buttonsTest3" value="@item.Id" onclick="SetAccept(this.value)" data-dismiss="modal" style="background-color:green">Accept</button>
+
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+
+                </tr>
+            }
+        }
+    <tfoot>
+        <tr>
+
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Open since</th>
+            <th>Updated by</th>
+            <th>Body</th>
+
+        </tr>
+    </tfoot>
+</table>
+@section Scripts
+{
+    @*just for teset*@
+    @*<script> import session from `./js/ххх.js`</script>*@
+    <script src="~/js/signalRApplication.js"></script>
+    <script type="text/javascript" src="~/js/customTable.js"></script>
+    <script type="text/javascript" src="~/js/modalButtons.js"></script>
+}

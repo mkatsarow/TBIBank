@@ -1,0 +1,42 @@
+.btn-light {
+    background: white;
+    color: gray;
+    border: 1px solid white;
+    /*position: absolute;
+            top: 571px;
+            left: 687px;
+            padding: 10px;*/
+    border-radius: 5px;
+    font-size: 15pt;
+    padding: 18px;
+    margin-top: 601px;
+}
+
+    .btn-light:hover {
+        color: #212529;
+        background-color: #e2e6ea;
+        border-color: #dae0e5;
+    }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+
+.wrapper {
+    
+    width:100%;
+    background-image: url('../images/error404.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#page404 {
+    text-align: center;
+}
+
+html {
+    background: #FFBE00;
+}

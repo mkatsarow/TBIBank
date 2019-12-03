@@ -1,0 +1,145 @@
+﻿
+
+@model TBIBankApp.Models.Emails.EmailListModel
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" type="text/css" href="~/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="~/css/customTable.css" />
+
+
+<table id="example" class="display1" style="width:100%">
+    <thead>
+        <tr>
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Body</th>
+            <th>Status</th>
+            <th>Change status</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.EmailViewModels)
+        {
+
+            @if (item.IsOpne)
+            {
+
+                <tr id="@item.Id+classID" style="background-color:#999593">
+                    <th>@item.ReferenceNumber</th>
+                    <td>@item.RegisteredInDataBase</td>
+                    <td>@item.Sender</td>
+                    <td>@item.Subject</td>
+                    <td>
+                        @if (item.AttachmentCount == 0)
+                        {
+                            <p>No Attachments</p>
+                        }
+                        else
+                        {
+                            <p>
+                                @item.AttachmentCount Attachments <span class="glyphicon glyphicon-tags"></span>
+                            </p>
+                        }
+                    </td>
+                    <td>@item.Status</td>
+                    <td>
+
+                        <button type="button" disabled style="background-color:#FF0000" class="btn btn-primary" id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                            Denied
+                        </button>
+                    </td>
+                </tr>
+
+            }
+            else
+            {
+
+            <tr id="@item.Id+classID">
+                <th>@item.ReferenceNumber</th>
+                <td>@item.RegisteredInDataBase</td>
+                <td>@item.Sender</td>
+                <td>@item.Subject</td>
+                <td>
+                    @if (item.AttachmentCount == 0)
+                    {
+                        <p>No Attachments</p>
+                    }
+                    else
+                    {
+                        <p>
+                            @item.AttachmentCount Attachments <span class="glyphicon glyphicon-tags"></span>
+                        </p>
+                    }
+                </td>
+                <td>@item.Status</td>
+                <td>
+
+                    <button type="button" class="btn btn-primary" id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                        Preview
+                    </button>
+
+
+                    <div class="modal fade @item.Id" id="@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 align="center" class="modal-title text-center" id="exampleModalLabel"></h5>
+                                    <div id="@item.Id+timerId"></div>
+                                    <button type="button" value="@item.Id" class="close" data-dismiss="modal" onclick="SetButtonToEnable(this.value)" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    @if (item.LoanApplicationStatus.ToLower() == "rejected")
+                                    {
+                                        <img id="rejected" src="~/images/rejected.jpg" />
+                                    }
+                                    else
+                                    {
+                                        <img id="accepted" src="~/images/approved.jpg" />
+                                    }
+                                    <div class="divWrapper">@Html.Raw(item.Body)</div>
+                                </div>
+                                <div class="modal-footer">
+                                    @if (User.IsInRole("Manager"))
+                                    {
+                                        <button type="button" class="btn btn-secondary buttonsTest4" value="@item.Id" data-dismiss="modal" onclick="SetNew(this.value)" style="background-color:green">Set to New</button>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            }
+        }
+<tfoot>
+        <tr>
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Body</th>
+            <th>Status</th>
+            <th>Change status</th>
+        </tr>
+    </tfoot>
+</table>
+@*<style>
+    a:visited{
+        color: red !important;
+    }
+</style>*@
+@section Scripts
+{
+    <script src="~/js/signalr-test.js"></script>
+    <script type="text/javascript" src="~/js/customTable.js"></script>
+    <script type="text/javascript" src="~/js/modalButtons.js"></script>
+}

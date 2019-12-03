@@ -1,0 +1,119 @@
+﻿/*
+.canvasjs-chart-container > .canvasjs-chart-canvas {
+    left: -465px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+*/
+
+body {
+    width:98%;
+}
+
+h4 {
+    font-family: arial, sans-serif;
+    /*font-family: 'Anton', sans-serif;*/
+    padding-top: 31px;
+    font-size: 22pt;
+    text-align: center;
+}
+
+#whiteCorrector {
+    position: relative;
+    top: -13px;
+}
+
+#orange {
+    background: #eb7422;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#gray-button {
+    background: #5a6268;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#light-gray-button {
+    background: #9f9f9f;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#gray {
+    background: #5a6268;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+    #buttons > .btn-primary {
+        color: white;
+        background-color: #eb7422;
+        border-color: #eb7422;
+    }
+
+        #buttons > .btn-primary:hover {
+            color: #eb7422;
+            background-color: white;
+            border-color: #eb7422;
+        }
+
+span {
+        font-size: 14pt;
+        color: gray;
+    }
+
+#online {
+    background: #45e945;
+    border-radius: 50%;
+    color: #45e945;
+    padding: 4px 5px;
+    font-size: 3px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+#elements {
+    margin: 0 auto;
+    font-size: 14pt;
+}
+
+#ofline {
+    background: #e51818;
+    border-radius: 50%;
+    color: #45e945;
+    padding: 4px 5px;
+    font-size: 3px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:active {
+    box-shadow: 0 0 0 0.2rem #eb742257;
+}
+
+.btn-link {
+    color: #eb7422;
+    font-size: 15pt;
+}
+
+.btn-link:hover {
+    color: #eb7422;
+ 
+}
+
+.card-header {
+    text-align: center;
+}

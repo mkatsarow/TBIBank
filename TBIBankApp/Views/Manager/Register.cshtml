@@ -1,0 +1,96 @@
+﻿@model RegisterViewModel
+@*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/registerOperator.css">*@
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/registerOperator.css" />
+    <link rel="stylesheet" href="~/css/testregister.css"/>
+    <link rel="stylesheet" href="~/css/toastr.css" />
+}
+
+<div class="row" id="entirePage">
+    <div class="col-md-6" id="background"> </div>
+    <div class="col-md-6 col-sm-12" id="registrationForm">
+        <h1 class="text-center col-10"> Register </h1>
+        <h4 class="text-center col-10"> new Operator or Manager </h4>
+        <div class="registerClass">
+            <div class="row">
+                <form class="col s12" id="reg-form">
+                    <div class="row">
+
+                        <div class="input-field col s6">
+                            <label for="your-firstName">First Name</label>
+                            <input asp-for="FirstName" type="text" name="firstname" id="your-firstName" class="input-text" placeholder="Ivan">
+                            <br />
+                            <span asp-validation-for="FirstName" id="validate-firstName" class="custom-validation" data-placeholder="&#xf207;"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="your-lastName">Last Name</label>
+                            <input asp-for="LastName" type="text" name="lastname" id="your-lastName" class="input-text" placeholder="Ivanov">
+                            <br />
+                            <span asp-validation-for="LastName" id="validate-lastName" class="custom-validation" data-placeholder="&#xf207;"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="your-email">Email</label> <br>
+                            <input asp-for="Email" type="text" name="email" id="your-email" class="input-text" placeholder="ivan@tbi.com" required pattern="[^@@]+@@[^@@]+.[a-zA-Z]{2,6}">
+                            <br />
+                            <span asp-validation-for="Email" id="validate-email" class="custom-validation" data-placeholder="&#xf207;"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="your-name">Username</label>
+                            <input asp-for="UserName" type="text" name="username" id="your-name" class="input-text" placeholder="OprIvan" required>
+                            <br />
+                            <span asp-validation-for="UserName" id="validate-name" class="custom-validation" data-placeholder="&#xf207;"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="password">Password</label><br>
+                            <input asp-for="Password" type="password" name="password" id="password" class="input-text" placeholder="IvanIvanovOpr" required>
+                            <br />
+                            <span asp-validation-for="Password" id="validate-password" class="custom-validation" data-placeholder="&#xf207;"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="confirm-password">Confirm Password</label><br>
+                            <input asp-for="Password" type="password" name="confirmpassword" id="confirm-password" class="input-text" placeholder="Confirm Password" required>
+                            <br />
+                            <span asp-validation-for="Password" class="custom-validation" id="ConfirmPassword" data-placeholder="&#xf207;"> </span>
+                        </div>
+                    </div>
+
+                    <div class="input-field col s6">
+
+                        <legend>Please select a role:</legend>
+                        <div class="gender-male" id="operator-manager">
+                            <input class="with-gap" name="role" value="Operator" type="radio" id="operator" required checked="checked" />
+                            <label for="operator">Operator</label>
+                        </div>
+                        <div class="gender-female">
+                            <input class="with-gap" name="role" value="Manager" type="radio" id="manager" required />
+                            <label for="manager">Manager</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-field col s6">
+                        <input type="button" id="RegisterButton" name="register" class="register btn btn-large btn-register waves-effect waves-light" value="Register">
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+
+    @*<script src="~/lib/jquery/dist/jquery.js"></script>*@
+    <script src="~/js/toastr.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/js/Register.js"></script>
+}

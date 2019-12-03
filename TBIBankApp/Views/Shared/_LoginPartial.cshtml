@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+
+        <li class="nav-item">
+            <button type="submit" id="logoutbutton" class="nav-link btn btn-link btn-warning text-light">Log out</button>
+        </li>
+    }
+
+</ul>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $('#logoutbutton').on('click', function () {
+        $.ajax({
+            type: "Get",
+            url: "/Home/LogOutAsync",
+            success: function () {
+                window.location.replace("");
+            }
+        })
+    })
+</script>

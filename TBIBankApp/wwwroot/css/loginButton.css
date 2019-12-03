@@ -1,0 +1,46 @@
+﻿#box {
+    padding: 5px;
+    width: 200px;
+    z-index: 10;
+    position: relative;
+}
+
+    #box form {
+        background: #006699;
+        padding: 5px;
+        display: none;
+        position: absolute;
+        top: 27px;
+    }
+
+#button {
+    /*width: 75px;
+    background: #006699;
+    color: #fff;
+    padding: 3px 10px;
+    border: 1px solid #006699;
+    margin-bottom: 15px;
+    cursor: pointer;*/
+    background: blue;
+    background-image: -webkit-linear-gradient(top, #ff9500, #b82b2b);
+    background-image: -moz-linear-gradient(top, #ff9500, #b82b2b);
+    background-image: -o-linear-gradient(top, #ff9500, #b82b2b);
+    background-image: linear-gradient(to bottom, blue, #b82b2b);
+    border-radius: 60px;
+    -webkit-box-shadow: 3px 2px 14px #666666;
+    -moz-box-shadow: 3px 2px 14px #666666;
+    box-shadow: 3px 2px 14px #666666;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 277px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: none;
+    color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}

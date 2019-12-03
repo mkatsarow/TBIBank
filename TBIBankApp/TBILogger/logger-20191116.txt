@@ -1,0 +1,8 @@
+2019-11-16 18:59:01.415 +02:00 [INF] Application starting up!
+2019-11-16 18:59:07.631 +02:00 [INF] HTTP GET / responded 200 in 1249.1923 ms
+2019-11-16 20:01:20.618 +02:00 [INF] Application starting up!
+2019-11-16 20:01:40.784 +02:00 [INF] HTTP GET / responded 200 in 688.1076 ms
+2019-11-16 20:03:11.765 +02:00 [INF] Application starting up!
+2019-11-16 20:03:18.914 +02:00 [INF] HTTP GET / responded 200 in 529.9536 ms
+2019-11-16 20:06:21.578 +02:00 [INF] Application starting up!
+2019-11-16 20:06:32.336 +02:00 [INF] HTTP GET / responded 200 in 608.4477 ms

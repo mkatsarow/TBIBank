@@ -1,0 +1,162 @@
+﻿@model TBIBankApp.Models.Emails.EmailListModel
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" type="text/css" href="~/css/main.css">
+
+<link rel="stylesheet" type="text/css" href="~/css/customTable.css" />
+
+
+<table id="example" class="display1" style="width:100%">
+    <thead>
+        <tr>
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Body</th>
+            <th>Attachments</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.EmailViewModels)
+        {
+            @if (item.IsOpne)
+            {
+
+                <tr id="@item.Id+classID" style="background-color:#999593">
+                    <th>@item.ReferenceNumber</th>
+                    <td>@item.RegisteredInDataBase</td>
+                    <td>@item.Sender</td>
+                    <td>@item.Subject</td>
+                    <td>@item.Status</td>
+                    <td>
+
+                        <button type="button" class="btn btn-primary" disabled id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                            Preview
+                        </button>
+                    </td>
+                    <td>
+                        @if (item.AttachmentCount == 0)
+                        {
+                            <p>No Attachments</p>
+                        }
+                        else
+                        {
+                            <p>
+                                @item.AttachmentCount Attachments <span class="glyphicon glyphicon-tags"></span>
+                            </p>
+                        }
+                    </td>
+
+                </tr>
+            }
+            else
+            {
+                <tr id="@item.Id+classID">
+                    <th>@item.ReferenceNumber</th>
+                    <td>@item.RegisteredInDataBase</td>
+                    <td>@item.Sender</td>
+                    <td>@item.Subject</td>
+                    <td>@item.Status</td>
+                    <td>
+
+                        <button type="button" class="btn btn-primary" id="@item.Id" data-toggle="modal" data-target="#exampleModal" onclick="ChekForDisable(this.id)">
+                            Preview
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade @item.Id" id="@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 align="center" class="modal-title cent" id="exampleModalLabel"></h3>
+                                        <div id="@item.Id+timerId"></div>
+
+                                        <button type="button" value="@item.Id" class="close" data-dismiss="modal" onclick="SetButtonToEnable(this.value)" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="divWrapper">@Html.Raw(item.Body)</div>
+                                    </div>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">First Name</label>
+                                            <input class="form-control" id="@item.Id+customFirstName" placeholder="Enter First Name">
+                                            <span id="@item.Id+checkFirstName" style="color:red" data-placeholder="&#xf207;"></span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Last Name</label>
+                                            <input class="form-control" id="@item.Id+customLastName" placeholder="Enter Last Name">
+                                            <span id="@item.Id+checkLastName" style="color:red" data-placeholder="&#xf207;"></span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Egn</label>
+                                            <input class="form-control" id="@item.Id+customEgn" placeholder="Enter Egn">
+                                            <span id="@item.Id+checkEgn" style="color:red" data-placeholder="&#xf207;"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>CardID</label>
+                                            <input class="form-control" id="@item.Id+customCardId" placeholder="Enter CardId" />
+                                            <span id="@item.Id+checkCardId" style="color:red" data-placeholder="&#xf207;"></span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Phone Number</label>
+                                            <input class="form-control" id="@item.Id+phoneId" placeholder="Enter Phone Number" />
+                                            <span id="@item.Id+checkPhoneId" style="color:red" data-placeholder="&#xf207;"></span>
+
+                                        </div>
+                                    </form>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary buttonsTest3" value="@item.Id" onclick="SetOpen(this.value)" style="background-color:green">Set to Open</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        @if (item.AttachmentCount == 0)
+                        {
+                            <p>No Attachments</p>
+                        }
+                        else
+                        {
+                            <p>
+                                @item.AttachmentCount Attachments <span class="glyphicon glyphicon-tags"></span>
+                            </p>
+                        }
+                    </td>
+
+                </tr>
+            }
+        }
+<tfoot>
+        <tr>
+            <th>Email ID</th>
+            <th>Recieved</th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Body</th>
+            <th>Attachments</th>
+
+        </tr>
+    </tfoot>
+</table>
+
+@section Scripts
+{
+    <script src="~/js/signalr-test.js"></script>
+    <script type="text/javascript" src="~/js/customTable.js"></script>
+    <script type="text/javascript" src="~/js/modalButtons.js"></script>
+}

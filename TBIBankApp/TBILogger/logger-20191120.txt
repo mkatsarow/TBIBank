@@ -1,0 +1,473 @@
+2019-11-20 08:10:00.158 +02:00 [INF] Application starting up!
+2019-11-20 08:10:53.306 +02:00 [INF] Application starting up!
+2019-11-20 08:10:55.643 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 08:10:56.157 +02:00 [INF] HTTP GET / responded 302 in 469.4126 ms
+2019-11-20 08:10:56.643 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 443.4149 ms
+2019-11-20 08:10:57.165 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 30.034 ms
+2019-11-20 08:11:46.043 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 672.2488 ms
+2019-11-20 08:11:46.899 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.9342 ms
+2019-11-20 08:12:16.460 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=2ff48e2f-3751-4a9c-91f3-59326603228c responded 200 in 246.4434 ms
+2019-11-20 08:12:20.578 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=2ff48e2f-3751-4a9c-91f3-59326603228c&status=Closed responded 200 in 166.7544 ms
+2019-11-20 08:12:31.417 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 61.2697 ms
+2019-11-20 08:12:31.660 +02:00 [INF] HTTP GET /notification?id=9FvPgZS3bs0xmszc3SMLfQ responded 101 in 94468.6245 ms
+2019-11-20 08:12:32.241 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5417 ms
+2019-11-20 08:13:40.676 +02:00 [INF] HTTP GET / responded 302 in 1.265 ms
+2019-11-20 08:13:40.721 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 33.9903 ms
+2019-11-20 08:13:40.739 +02:00 [INF] HTTP GET /notification?id=f8_EIJVa7En9-9HM9dDWCQ responded 101 in 68470.7117 ms
+2019-11-20 08:13:41.218 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7947 ms
+2019-11-20 08:13:49.671 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 110.8553 ms
+2019-11-20 08:13:49.687 +02:00 [INF] HTTP GET /notification?id=fezHxtoUx850FCTixU4CNw responded 101 in 8377.0745 ms
+2019-11-20 08:13:50.285 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.0992 ms
+2019-11-20 08:13:51.904 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 22.5361 ms
+2019-11-20 08:13:51.916 +02:00 [INF] HTTP GET /notification?id=VGFvizn38UEwMMzzB8DGmQ responded 101 in 1592.3102 ms
+2019-11-20 08:13:52.002 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7409 ms
+2019-11-20 08:13:52.846 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 31.7348 ms
+2019-11-20 08:13:52.859 +02:00 [INF] HTTP GET /notification?id=9F4CN0SXC-H_3LThOlEuPw responded 101 in 659.1854 ms
+2019-11-20 08:13:52.963 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7009 ms
+2019-11-20 08:13:55.198 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 20.7756 ms
+2019-11-20 08:13:55.217 +02:00 [INF] HTTP GET /notification?id=AGH-O2tFHqNlZ98Lh5jyKA responded 101 in 2066.0192 ms
+2019-11-20 08:13:55.403 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.4006 ms
+2019-11-20 08:13:57.893 +02:00 [INF] HTTP GET / responded 302 in 0.7395 ms
+2019-11-20 08:13:57.927 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 24.1804 ms
+2019-11-20 08:13:57.956 +02:00 [INF] HTTP GET /notification?id=4n04ZDmA_mWrO6KGacJV8Q responded 101 in 2261.9261 ms
+2019-11-20 08:13:59.182 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 3.5502 ms
+2019-11-20 09:32:18.052 +02:00 [INF] Application starting up!
+2019-11-20 09:32:21.315 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 09:32:21.892 +02:00 [INF] HTTP GET / responded 302 in 531.6856 ms
+2019-11-20 09:32:22.263 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 338.319 ms
+2019-11-20 09:32:22.750 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 24.2255 ms
+2019-11-20 09:32:34.634 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 201.7426 ms
+2019-11-20 09:32:34.721 +02:00 [INF] HTTP GET /notification?id=ObCLlu7lQ0zZBn3m05MUmQ responded 101 in 11932.7754 ms
+2019-11-20 09:32:34.947 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6935 ms
+2019-11-20 09:32:36.167 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 137.6423 ms
+2019-11-20 09:32:36.178 +02:00 [INF] HTTP GET /notification?id=4p73gWRj5Nk84EDELMlsrw responded 101 in 1197.4505 ms
+2019-11-20 09:32:36.272 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6219 ms
+2019-11-20 09:34:47.978 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 114.8716 ms
+2019-11-20 09:34:57.521 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 36.3455 ms
+2019-11-20 09:35:00.438 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 30.2924 ms
+2019-11-20 09:35:00.446 +02:00 [INF] HTTP GET /notification?id=Rmg_vh0B6HTIxH993lks8A responded 101 in 144048.7988 ms
+2019-11-20 09:35:00.539 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5571 ms
+2019-11-20 09:40:04.445 +02:00 [INF] Application starting up!
+2019-11-20 09:40:06.637 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 09:40:06.999 +02:00 [INF] HTTP GET / responded 302 in 315.4535 ms
+2019-11-20 09:41:53.542 +02:00 [INF] Application starting up!
+2019-11-20 09:41:55.291 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 09:41:55.724 +02:00 [INF] HTTP GET / responded 302 in 125.9245 ms
+2019-11-20 09:41:56.113 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 768.7485 ms
+2019-11-20 09:41:56.141 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 31.4807 ms
+2019-11-20 09:41:56.711 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 30.5685 ms
+2019-11-20 09:41:56.865 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7167 ms
+2019-11-20 09:49:58.049 +02:00 [INF] Application starting up!
+2019-11-20 09:50:00.718 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 09:50:01.038 +02:00 [INF] HTTP GET / responded 302 in 261.1973 ms
+2019-11-20 09:50:01.566 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 484.2098 ms
+2019-11-20 09:50:02.198 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 31.2759 ms
+2019-11-20 09:50:05.698 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 227.232 ms
+2019-11-20 09:50:05.787 +02:00 [INF] HTTP GET /notification?id=R8ceYgP7zAZMbV7YvvxFCw responded 101 in 3557.6237 ms
+2019-11-20 09:50:05.992 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5428 ms
+2019-11-20 09:50:06.803 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 152.7032 ms
+2019-11-20 09:50:06.812 +02:00 [INF] HTTP GET /notification?id=XNbJkZBT0EZGUC0wZ8Vcdg responded 101 in 805.7278 ms
+2019-11-20 09:50:06.886 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5613 ms
+2019-11-20 09:50:07.991 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 39.2954 ms
+2019-11-20 09:50:08.012 +02:00 [INF] HTTP GET /notification?id=R3SjrtcrOnbecegqz3Wxwg responded 101 in 1033.8691 ms
+2019-11-20 09:50:08.081 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.553 ms
+2019-11-20 09:50:09.506 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=156fdf4e-0469-4f2e-a214-754ce844122e responded 200 in 138.6859 ms
+2019-11-20 09:50:57.224 +02:00 [INF] Application starting up!
+2019-11-20 09:50:59.401 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 09:50:59.663 +02:00 [INF] HTTP GET / responded 302 in 212.3707 ms
+2019-11-20 09:51:00.063 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 370.6723 ms
+2019-11-20 09:51:00.694 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 33.3749 ms
+2019-11-20 09:51:13.563 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 241.1009 ms
+2019-11-20 09:51:13.634 +02:00 [INF] HTTP GET /notification?id=3WfN__6irtE_1f_VPcYWxg responded 101 in 12905.188 ms
+2019-11-20 09:51:13.833 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.0359 ms
+2019-11-20 09:51:25.938 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 26.4529 ms
+2019-11-20 09:51:25.950 +02:00 [INF] HTTP GET /notification?id=0qyovUc6MAV0XpQrIMMg4A responded 101 in 12096.6268 ms
+2019-11-20 09:51:26.048 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.6265 ms
+2019-11-20 09:51:27.903 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 135.2067 ms
+2019-11-20 09:51:27.917 +02:00 [INF] HTTP GET /notification?id=21FFuDUqmvmCQFyGAMiTsw responded 101 in 1673.9147 ms
+2019-11-20 09:51:28.013 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8047 ms
+2019-11-20 09:51:30.409 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 48.9788 ms
+2019-11-20 09:51:30.420 +02:00 [INF] HTTP GET /notification?id=pvix6-I1fQj_HNpzV9_5AQ responded 101 in 2279.9779 ms
+2019-11-20 09:51:30.499 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5554 ms
+2019-11-20 09:51:32.481 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=77d61de6-bb68-401b-ac3d-a11040232214 responded 200 in 136.9153 ms
+2019-11-20 09:51:45.359 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 39.7457 ms
+2019-11-20 09:51:50.815 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 85.7101 ms
+2019-11-20 09:51:50.904 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=77d61de6-bb68-401b-ac3d-a11040232214&status=Open responded 200 in 77.2002 ms
+2019-11-20 09:52:00.880 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410 responded 200 in 6.7849 ms
+2019-11-20 09:52:19.514 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 1.2162 ms
+2019-11-20 09:52:25.388 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 14.3634 ms
+2019-11-20 09:52:25.415 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410&status=Open responded 200 in 16.6575 ms
+2019-11-20 09:52:49.596 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 8.3194 ms
+2019-11-20 09:52:49.610 +02:00 [INF] HTTP GET /notification?id=ZvEm01dd4plZ0hy7FHhkFg responded 101 in 78977.7567 ms
+2019-11-20 09:52:49.706 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5263 ms
+2019-11-20 09:52:52.706 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410 responded 200 in 12.6269 ms
+2019-11-20 09:52:54.854 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410&status=New responded 200 in 71.5247 ms
+2019-11-20 09:52:56.803 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 10.2944 ms
+2019-11-20 09:52:56.814 +02:00 [INF] HTTP GET /notification?id=sUX1_Y6jUXsOMS9SO7MRhw responded 101 in 6961.174 ms
+2019-11-20 09:52:56.957 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7533 ms
+2019-11-20 09:53:06.003 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410 responded 200 in 10.8431 ms
+2019-11-20 09:53:14.635 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 10.8319 ms
+2019-11-20 09:53:14.662 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410&status=Open responded 200 in 11.9726 ms
+2019-11-20 11:32:16.523 +02:00 [INF] Application starting up!
+2019-11-20 11:32:19.228 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 11:32:19.790 +02:00 [INF] HTTP GET / responded 302 in 435.9514 ms
+2019-11-20 11:32:20.153 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 328.9323 ms
+2019-11-20 11:32:20.664 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 22.0926 ms
+2019-11-20 11:32:55.979 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 288.6402 ms
+2019-11-20 11:32:56.066 +02:00 [INF] HTTP GET /notification?id=2i-LFlNzxi95-CZpXIYdkw responded 101 in 35369.9635 ms
+2019-11-20 11:32:56.274 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4901 ms
+2019-11-20 11:33:43.496 +02:00 [INF] Application starting up!
+2019-11-20 11:33:46.294 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 11:33:46.550 +02:00 [INF] HTTP GET / responded 302 in 223.1559 ms
+2019-11-20 11:33:46.966 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 389.6195 ms
+2019-11-20 11:33:47.645 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 22.0729 ms
+2019-11-20 11:34:04.199 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 335.8987 ms
+2019-11-20 11:34:04.245 +02:00 [INF] HTTP GET /notification?id=aBkA7VTprEY3wdAhBu0QRQ responded 101 in 16592.5918 ms
+2019-11-20 11:34:04.498 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6717 ms
+2019-11-20 11:35:08.809 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 87.8987 ms
+2019-11-20 11:35:08.820 +02:00 [INF] HTTP GET /notification?id=pbPARQr5-SxxqFDvncT9hw responded 101 in 64307.5803 ms
+2019-11-20 11:35:09.320 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 8.3563 ms
+2019-11-20 11:35:29.448 +02:00 [INF] HTTP GET / responded 302 in 1.0196 ms
+2019-11-20 11:35:29.500 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 38.8199 ms
+2019-11-20 11:35:30.012 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4378 ms
+2019-11-20 11:36:04.823 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 57.0461 ms
+2019-11-20 11:36:21.957 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1&status=InvalidApplication responded 200 in 95.3538 ms
+2019-11-20 11:36:22.054 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 65.7776 ms
+2019-11-20 11:36:22.062 +02:00 [INF] HTTP GET /notification?id=jqd2ySiVbg2cz9XIuT0R8g responded 101 in 72612.6068 ms
+2019-11-20 11:36:22.293 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8753 ms
+2019-11-20 11:36:26.961 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 18.836 ms
+2019-11-20 11:36:26.976 +02:00 [INF] HTTP GET /notification?id=CTNUpHjsxWkVuffSuNvSTA responded 101 in 56908.6302 ms
+2019-11-20 11:36:27.273 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4438 ms
+2019-11-20 11:36:32.377 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 9.0725 ms
+2019-11-20 11:36:32.388 +02:00 [INF] HTTP GET /notification?id=1AvUqnoOuJt4uPnXbjXyiw responded 101 in 10081.1292 ms
+2019-11-20 11:36:32.512 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.472 ms
+2019-11-20 11:36:34.247 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 11.6592 ms
+2019-11-20 11:36:41.271 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 34.8167 ms
+2019-11-20 11:36:49.967 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 14.7895 ms
+2019-11-20 11:36:52.620 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 5.1875 ms
+2019-11-20 11:37:26.297 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 41.7231 ms
+2019-11-20 11:37:26.307 +02:00 [INF] HTTP GET /notification?id=3lOIV3xJevPCVJhPd-_KKg responded 101 in 58982.5208 ms
+2019-11-20 11:37:26.395 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5407 ms
+2019-11-20 11:37:27.179 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 35.6811 ms
+2019-11-20 11:37:27.188 +02:00 [INF] HTTP GET /notification?id=9hZ4fVs3RXo3l6jrVjaRfA responded 101 in 643.9608 ms
+2019-11-20 11:37:27.313 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4537 ms
+2019-11-20 11:37:28.010 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Closed responded 200 in 25.4913 ms
+2019-11-20 11:37:28.020 +02:00 [INF] HTTP GET /notification?id=G9AnfVQdEU32lxyNE60eFA responded 101 in 497.0225 ms
+2019-11-20 11:37:28.120 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4916 ms
+2019-11-20 11:37:29.967 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 83.4061 ms
+2019-11-20 11:37:29.978 +02:00 [INF] HTTP GET /notification?id=o4xHajJuBJ2j8e9PH1M-Kg responded 101 in 1733.6475 ms
+2019-11-20 11:37:55.503 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 27.0153 ms
+2019-11-20 11:38:39.661 +02:00 [INF] HTTP POST /Manager/CheckForUserAndEmailAsync responded 200 in 104.565 ms
+2019-11-20 11:38:39.882 +02:00 [INF] HTTP POST /Manager/RegisterUserAsync responded 200 in 206.3696 ms
+2019-11-20 11:39:10.851 +02:00 [INF] HTTP POST /Manager/CheckForUserAndEmailAsync responded 200 in 9.5486 ms
+2019-11-20 11:39:10.910 +02:00 [INF] HTTP POST /Manager/RegisterUserAsync responded 200 in 48.7343 ms
+2019-11-20 11:39:45.388 +02:00 [INF] HTTP POST /Manager/CheckForUserAndEmailAsync responded 200 in 10.8806 ms
+2019-11-20 11:40:01.896 +02:00 [INF] HTTP POST /Manager/CheckForUserAndEmailAsync responded 200 in 11.7042 ms
+2019-11-20 11:40:04.660 +02:00 [INF] User logged out.
+2019-11-20 11:40:04.665 +02:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 71.2981 ms
+2019-11-20 11:40:04.709 +02:00 [INF] HTTP GET / responded 200 in 34.1763 ms
+2019-11-20 11:40:13.468 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 56.0596 ms
+2019-11-20 11:40:34.995 +02:00 [INF] HTTP POST /Home/SetNewPasswordAsync responded 200 in 214.4651 ms
+2019-11-20 11:40:43.410 +02:00 [WRN] Change password failed for user 9d6745c3-ea68-4fe8-8313-9312c683fa2d.
+2019-11-20 11:40:43.432 +02:00 [WRN] Invalid password for user 9d6745c3-ea68-4fe8-8313-9312c683fa2d.
+2019-11-20 11:40:43.435 +02:00 [WRN] User 9d6745c3-ea68-4fe8-8313-9312c683fa2d failed to provide the correct password.
+2019-11-20 11:40:43.439 +02:00 [INF] HTTP POST /Home/SetNewPasswordAsync responded 200 in 50.1173 ms
+2019-11-20 11:40:43.497 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 29.1746 ms
+2019-11-20 11:40:43.913 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4527 ms
+2019-11-20 11:43:38.747 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 54.0462 ms
+2019-11-20 11:43:38.768 +02:00 [INF] HTTP GET /notification?id=X9s3NhBtu4KCJbHzPYDIFA responded 101 in 174819.0993 ms
+2019-11-20 11:43:39.192 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5371 ms
+2019-11-20 11:44:12.471 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 16.567 ms
+2019-11-20 11:44:12.491 +02:00 [INF] HTTP GET /notification?id=MQH1jtZuthMkDKFulrghCw responded 101 in 33264.541 ms
+2019-11-20 11:44:12.899 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.73 ms
+2019-11-20 11:44:18.802 +02:00 [INF] HTTP GET / responded 302 in 0.9158 ms
+2019-11-20 11:44:18.819 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 9.6035 ms
+2019-11-20 11:44:18.832 +02:00 [INF] HTTP GET /notification?id=NAHfgiF5ijYE2TLuqrnP9g responded 101 in 466134.1175 ms
+2019-11-20 11:44:19.098 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.2735 ms
+2019-11-20 11:44:21.306 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 25.4677 ms
+2019-11-20 11:44:21.319 +02:00 [INF] HTTP GET /notification?id=2xvrbVIOualx24XLfHncOw responded 101 in 2180.3619 ms
+2019-11-20 11:44:21.683 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.437 ms
+2019-11-20 11:44:26.971 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 21.142 ms
+2019-11-20 11:44:26.984 +02:00 [INF] HTTP GET /notification?id=sXcTRAPknL2tUxlHI7537Q responded 101 in 5182.3909 ms
+2019-11-20 11:44:27.084 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5387 ms
+2019-11-20 11:44:44.638 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 15.6538 ms
+2019-11-20 11:44:56.923 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f&status=InvalidApplication responded 200 in 25.1667 ms
+2019-11-20 11:44:56.985 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 35.8118 ms
+2019-11-20 11:44:56.998 +02:00 [INF] HTTP GET /notification?id=AcaLBYYIVro6WHesnzxMsQ responded 101 in 29735.6125 ms
+2019-11-20 11:44:57.250 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5262 ms
+2019-11-20 11:45:18.273 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 41.1204 ms
+2019-11-20 11:45:18.317 +02:00 [INF] HTTP GET /notification?id=6fQBfLW0wQw8D3yeQ6Njlg responded 101 in 65386.8364 ms
+2019-11-20 11:45:18.872 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6403 ms
+2019-11-20 11:46:47.442 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 29.7682 ms
+2019-11-20 11:46:47.455 +02:00 [INF] HTTP GET /notification?id=fQqY8uz32ubhtE4Wrm3Azw responded 101 in 88539.8229 ms
+2019-11-20 11:46:47.800 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6118 ms
+2019-11-20 11:46:49.020 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 14.4756 ms
+2019-11-20 11:46:51.522 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 10.2873 ms
+2019-11-20 11:46:53.368 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 10.7561 ms
+2019-11-20 13:30:02.526 +02:00 [INF] Application starting up!
+2019-11-20 13:30:30.680 +02:00 [INF] Application starting up!
+2019-11-20 13:30:33.707 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 13:30:35.860 +02:00 [INF] HTTP GET / responded 302 in 1778.3883 ms
+2019-11-20 13:30:36.382 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 464.2674 ms
+2019-11-20 13:30:36.728 +02:00 [INF] HTTP GET / responded 302 in 810.1726 ms
+2019-11-20 13:30:36.781 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 40.5435 ms
+2019-11-20 13:30:37.480 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 38.8671 ms
+2019-11-20 13:30:37.773 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8338 ms
+2019-11-20 13:30:43.897 +02:00 [INF] HTTP GET / responded 200 in 571.501 ms
+2019-11-20 13:30:54.316 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 234.7248 ms
+2019-11-20 13:30:54.356 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 27.6807 ms
+2019-11-20 13:30:55.295 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6583 ms
+2019-11-20 13:31:00.844 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 289.2965 ms
+2019-11-20 13:31:00.921 +02:00 [INF] HTTP GET /notification?id=9Dnb_FnFb7YDDGeYF0O3EQ responded 101 in 5596.2146 ms
+2019-11-20 13:31:01.001 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6479 ms
+2019-11-20 13:31:03.749 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 51.0824 ms
+2019-11-20 13:31:03.760 +02:00 [INF] HTTP GET /notification?id=kJpTd8jOywNt1C0yeKXF0A responded 101 in 2714.2315 ms
+2019-11-20 13:31:04.043 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.9372 ms
+2019-11-20 13:31:08.330 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 137.1537 ms
+2019-11-20 13:31:10.325 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368&status=NotReviewed responded 200 in 108.4018 ms
+2019-11-20 13:31:14.418 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 3.7405 ms
+2019-11-20 13:31:15.720 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 3.2446 ms
+2019-11-20 13:31:16.710 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 4.9875 ms
+2019-11-20 13:31:18.475 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f&status=NotReviewed responded 200 in 14.109 ms
+2019-11-20 13:31:58.150 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 42.3356 ms
+2019-11-20 13:31:58.161 +02:00 [INF] HTTP GET /notification?id=OdGyM1f-IERTa1rL3w2prg responded 101 in 80321.6323 ms
+2019-11-20 13:31:58.862 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6434 ms
+2019-11-20 13:32:13.590 +02:00 [INF] HTTP GET / responded 302 in 355.369 ms
+2019-11-20 13:32:13.654 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 41.4905 ms
+2019-11-20 13:32:13.670 +02:00 [INF] HTTP GET /notification?id=ArIA968Fjr5XqV60D6zvHg responded 101 in 14662.2408 ms
+2019-11-20 13:32:14.020 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5853 ms
+2019-11-20 13:32:15.700 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 64.7743 ms
+2019-11-20 13:32:15.710 +02:00 [INF] HTTP GET /notification?id=5JsavSl3Q4-R0mwpH-b1lA responded 101 in 1656.3134 ms
+2019-11-20 13:32:53.918 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 30.8938 ms
+2019-11-20 13:32:54.233 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4265 ms
+2019-11-20 13:32:58.376 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 17.8895 ms
+2019-11-20 13:33:03.693 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 34.8799 ms
+2019-11-20 13:33:07.278 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 15.715 ms
+2019-11-20 13:33:08.640 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 18.9601 ms
+2019-11-20 13:33:14.126 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 27.1065 ms
+2019-11-20 13:33:14.138 +02:00 [INF] HTTP GET /notification?id=YnGpd-OX8OhMdZ4PwcyDpQ responded 101 in 19886.1164 ms
+2019-11-20 13:33:14.327 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4803 ms
+2019-11-20 13:33:16.403 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 39.439 ms
+2019-11-20 13:33:16.416 +02:00 [INF] HTTP GET /notification?id=aPcnojFaBi0PfuTadyhL5w responded 101 in 1844.5643 ms
+2019-11-20 13:33:16.519 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5982 ms
+2019-11-20 13:33:17.558 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 11.116 ms
+2019-11-20 13:34:35.546 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 15.6815 ms
+2019-11-20 13:34:36.128 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 39.0407 ms
+2019-11-20 13:34:36.148 +02:00 [INF] HTTP GET /notification?id=yi3YEKMNRr6E8uN9ZFG9ig responded 101 in 79539.4159 ms
+2019-11-20 13:34:36.878 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5621 ms
+2019-11-20 13:34:38.097 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 9.9802 ms
+2019-11-20 13:34:52.295 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 10.1852 ms
+2019-11-20 13:34:52.306 +02:00 [INF] HTTP GET /notification?id=9IuX83YFMKNoXnAoIVPLPA responded 101 in 15312.8908 ms
+2019-11-20 13:34:52.540 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5417 ms
+2019-11-20 13:34:53.812 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 5.0081 ms
+2019-11-20 13:34:55.136 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368&status=New responded 200 in 13.2184 ms
+2019-11-20 13:34:56.317 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 12.415 ms
+2019-11-20 13:34:56.331 +02:00 [INF] HTTP GET /notification?id=W27LEZzC7wx_v-KMTMYweg responded 101 in 3724.3848 ms
+2019-11-20 13:34:56.436 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5184 ms
+2019-11-20 13:34:59.951 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 9.9871 ms
+2019-11-20 13:35:18.385 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 43.5336 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-20 13:35:18.464 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-20 13:35:18.499 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.9351 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-20 13:35:18.525 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-20 13:35:18.560 +02:00 [ERR] Connection id "0HLRDLK75V2AH", Request id "0HLRDLK75V2AH:00000015": An unhandled exception was thrown by the application.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-20 13:35:24.778 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 17.0161 ms
+2019-11-20 13:35:25.148 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 37.716 ms
+2019-11-20 13:35:25.168 +02:00 [INF] HTTP GET /notification?id=vZ2VdObiR_i3OBaONfDPyQ responded 101 in 28587.0751 ms
+2019-11-20 13:35:25.703 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.591 ms
+2019-11-20 13:35:27.022 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 1.8418 ms
+2019-11-20 13:35:28.060 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=156fdf4e-0469-4f2e-a214-754ce844122e responded 200 in 4.8164 ms
+2019-11-20 13:35:51.147 +02:00 [INF] Application starting up!
+2019-11-20 13:35:53.968 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 13:35:54.719 +02:00 [INF] HTTP GET / responded 302 in 630.63 ms
+2019-11-20 13:35:55.219 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 463.1956 ms
+2019-11-20 13:35:56.444 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 52.7127 ms
+2019-11-20 13:36:01.260 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 368.3298 ms
+2019-11-20 13:36:01.380 +02:00 [INF] HTTP GET /notification?id=AUwBqN3QMdkGFKwE0xPlLg responded 101 in 4912.8467 ms
+2019-11-20 13:36:01.669 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.1026 ms
+2019-11-20 13:36:02.756 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 162.5739 ms
+2019-11-20 13:36:06.023 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f&status=New responded 200 in 106.6976 ms
+2019-11-20 13:36:07.961 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 63.3099 ms
+2019-11-20 13:36:07.972 +02:00 [INF] HTTP GET /notification?id=KDdVZzxdzg0zjQIkJWz5gg responded 101 in 6174.8901 ms
+2019-11-20 13:36:08.137 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.51 ms
+2019-11-20 13:36:11.158 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 11.8797 ms
+2019-11-20 13:36:27.030 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 40.8622 ms
+2019-11-20 13:36:46.151 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 6.0446 ms
+2019-11-20 13:36:52.139 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 67.9432 ms
+2019-11-20 13:36:52.169 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f&status=Open responded 200 in 18.9885 ms
+2019-11-20 13:38:25.558 +02:00 [INF] HTTP GET /notification?id=QiXN4Gvuj57_6X49lCku6w responded 101 in 137206.2734 ms
+2019-11-20 23:38:34.110 +02:00 [INF] Application starting up!
+2019-11-20 23:38:37.824 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-20 23:38:38.720 +02:00 [INF] HTTP GET / responded 200 in 772.8539 ms
+2019-11-20 23:38:50.986 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 202.953 ms
+2019-11-20 23:38:53.577 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 10.0562 ms
+2019-11-20 23:39:00.100 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 378.2234 ms
+2019-11-20 23:39:00.401 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 270.1945 ms
+2019-11-20 23:39:00.867 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 27.4191 ms
+2019-11-20 23:39:25.813 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 242.0291 ms
+2019-11-20 23:39:26.051 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5236 ms
+2019-11-20 23:39:42.759 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 144.1214 ms
+2019-11-20 23:39:42.821 +02:00 [INF] HTTP GET /notification?id=ajFDmYnFjHeRcoQ_ZMW3aQ responded 101 in 16697.965 ms
+2019-11-20 23:39:43.088 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.422 ms
+2019-11-20 23:39:50.772 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 24.2745 ms
+2019-11-20 23:39:52.179 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 118.4712 ms
+2019-11-20 23:39:54.569 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1&status=NotReviewed responded 200 in 92.9547 ms
+2019-11-20 23:40:03.610 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 17.9077 ms
+2019-11-20 23:40:03.622 +02:00 [INF] HTTP GET /notification?id=Ek_7P1GE7mBqKZ1LveN_aA responded 101 in 62742.4387 ms
+2019-11-20 23:40:04.007 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8231 ms
+2019-11-20 23:40:06.526 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 3.931 ms
+2019-11-20 23:40:08.836 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 40.4411 ms
+2019-11-20 23:40:08.846 +02:00 [INF] HTTP GET /notification?id=DdmiuGZiIy2pKo_Hk6qgJg responded 101 in 4821.6065 ms
+2019-11-20 23:40:08.935 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4904 ms
+2019-11-20 23:40:13.610 +02:00 [INF] HTTP GET /notification?id=Da9fBZOI18inkqybqRq8AQ responded 101 in 30483.7743 ms
+2019-11-20 23:40:14.772 +02:00 [INF] HTTP GET / responded 302 in 267.6833 ms
+2019-11-20 23:40:14.843 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 46.1733 ms
+2019-11-20 23:40:14.889 +02:00 [INF] HTTP GET /notification?id=xkTuZNJJciCfOW6E3ae5pg responded 101 in 5865.602 ms
+2019-11-20 23:40:15.153 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5201 ms
+2019-11-20 23:40:20.902 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 81.0885 ms
+2019-11-20 23:40:20.916 +02:00 [INF] HTTP GET /notification?id=L5p0nx5dKjW_Oxrugs68Wg responded 101 in 5719.8188 ms
+2019-11-20 23:40:26.384 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 21.6157 ms
+2019-11-20 23:40:26.635 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4419 ms
+2019-11-20 23:40:28.878 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 14.0877 ms
+2019-11-20 23:40:36.273 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 30.6599 ms
+2019-11-20 23:40:37.059 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 9.9145 ms
+2019-11-20 23:40:37.074 +02:00 [INF] HTTP GET /notification?id=7qpBRiiFRjlAUzHXBQET_Q responded 101 in 10370.5954 ms
+2019-11-20 23:40:37.163 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5162 ms
+2019-11-20 23:40:38.441 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 10.8053 ms
+2019-11-20 23:40:40.398 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=e1fd598b-7282-40d3-98d5-2dfece4e6d2f responded 200 in 9.2132 ms
+2019-11-20 23:40:41.587 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 39.915 ms
+2019-11-20 23:40:41.596 +02:00 [INF] HTTP GET /notification?id=sSHkUofvUN0BIvDdNi3Z-A responded 101 in 4289.6325 ms
+2019-11-20 23:40:41.688 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.1426 ms
+2019-11-20 23:40:43.003 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 2.3749 ms
+2019-11-20 23:40:43.767 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=156fdf4e-0469-4f2e-a214-754ce844122e responded 200 in 2.1385 ms
+2019-11-20 23:40:45.531 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 10.1694 ms
+2019-11-20 23:41:00.738 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 40.3152 ms
+2019-11-20 23:41:51.454 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 14.1227 ms
+2019-11-20 23:42:01.129 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 20.6133 ms
+2019-11-20 23:42:01.146 +02:00 [INF] HTTP GET /notification?id=2tDJDd2c1TBMshC9inPEBw responded 101 in 79322.9733 ms
+2019-11-20 23:42:01.378 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5257 ms
+2019-11-20 23:42:02.345 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 8.9348 ms
+2019-11-20 23:42:02.359 +02:00 [INF] HTTP GET /notification?id=csRPKopj3dAj_CLK2FYMrQ responded 101 in 959.349 ms
+2019-11-20 23:42:02.439 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5378 ms
+2019-11-20 23:42:06.352 +02:00 [INF] HTTP GET / responded 302 in 222.4039 ms
+2019-11-20 23:42:06.422 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 46.6525 ms
+2019-11-20 23:42:06.455 +02:00 [INF] HTTP GET /notification?id=eJENrRlfViG-vg7N5xD2Jg responded 101 in 3927.8621 ms
+2019-11-20 23:42:06.711 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6999 ms
+2019-11-20 23:42:07.227 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 12.6802 ms
+2019-11-20 23:42:07.240 +02:00 [INF] HTTP GET /notification?id=S0V3jxzGQAVcC_-Mf5hvUg responded 101 in 504.3973 ms
+2019-11-20 23:42:18.706 +02:00 [INF] User logged out.
+2019-11-20 23:42:18.712 +02:00 [INF] HTTP POST /Identity/Account/Logout?returnUrl=%2F responded 302 in 65.6878 ms
+2019-11-20 23:42:18.920 +02:00 [INF] HTTP GET / responded 200 in 198.7041 ms
+2019-11-20 23:44:05.868 +02:00 [INF] HTTP GET / responded 200 in 274.8143 ms

@@ -1,0 +1,122 @@
+﻿
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TBIBankApp</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="icon" type="image/ico" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/util.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+
+    @RenderSection("Styles", required: false)
+    <link rel="stylesheet" type="text/css" href="~/css/nunito-font.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/images/logo-tbi.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  asp-controller="Home" asp-action="Dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listnew" asp-controller="Email" asp-action="ListEmailsAsync" asp-route-emailStatus="InvalidApplication">Invalid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listnotreviewd" asp-controller="Email" asp-action="ListEmailsAsync" asp-route-emailStatus="NotReviewed">Not Reviewed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listinvalid" asp-controller="Email" asp-action="ListEmailsAsync" asp-route-emailStatus="New">New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listopen" asp-controller="Email" asp-action="ListEmailsAsync" asp-route-emailStatus="Open">Opened</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listclosed" asp-controller="Email" asp-action="ListEmailsAsync" asp-route-emailStatus="Closed">Closed</a>
+                    </li>
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Manager" asp-action="Register">Register</a>
+                        </li>
+
+                    }
+
+                </ul>
+                <partial name="_LoginPartial" />
+
+
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div>
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3" id="main-container">
+            @RenderBody()
+        </main>
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="~/vendor/animsition/js/animsition.min.js"></script>
+        <script src="~/vendor/bootstrap/js/popper.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/vendor/select2/select2.min.js"></script>
+        <script src="~/vendor/daterangepicker/moment.min.js"></script>
+        <script src="~/vendor/daterangepicker/daterangepicker.js"></script>
+        <script src="~/vendor/countdowntime/countdowntime.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/autologout.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

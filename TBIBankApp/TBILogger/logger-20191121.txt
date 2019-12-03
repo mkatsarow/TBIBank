@@ -1,0 +1,1596 @@
+2019-11-21 00:24:40.113 +02:00 [INF] Application starting up!
+2019-11-21 00:24:50.780 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:24:51.483 +02:00 [INF] HTTP GET / responded 200 in 623.2555 ms
+2019-11-21 00:25:15.129 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 617.5192 ms
+2019-11-21 00:25:15.643 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 483.3294 ms
+2019-11-21 00:25:16.999 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 36.1651 ms
+2019-11-21 00:25:18.406 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 387.8386 ms
+2019-11-21 00:25:18.543 +02:00 [INF] HTTP GET /notification?id=vpE8fVz159bb533_dWzxYQ responded 101 in 1530.5767 ms
+2019-11-21 00:25:19.392 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 2.8185 ms
+2019-11-21 00:25:20.659 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 37.7635 ms
+2019-11-21 00:25:21.583 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=156fdf4e-0469-4f2e-a214-754ce844122e responded 200 in 5.3294 ms
+2019-11-21 00:25:22.207 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 129.7098 ms
+2019-11-21 00:26:21.363 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 204.4309 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:26:21.512 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:26:21.651 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 98.6111 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:26:21.685 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:26:21.723 +02:00 [ERR] Connection id "0HLRE11PO3MP7", Request id "0HLRE11PO3MP7:0000000A": An unhandled exception was thrown by the application.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 00:26:27.781 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 45.4379 ms
+2019-11-21 00:26:28.616 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 54.6325 ms
+2019-11-21 00:26:28.637 +02:00 [INF] HTTP GET /notification?id=DvMpBhXSF4rEDZdzb4m-BQ responded 101 in 69095.5489 ms
+2019-11-21 00:26:29.646 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.0576 ms
+2019-11-21 00:26:30.367 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 14.9224 ms
+2019-11-21 00:26:35.396 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1&status=New responded 200 in 3111.9982 ms
+2019-11-21 00:26:39.824 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 20.7499 ms
+2019-11-21 00:26:39.843 +02:00 [INF] HTTP GET /notification?id=a1Ds1x5_TOFDwSAYvPGLEA responded 101 in 10106.6831 ms
+2019-11-21 00:26:40.622 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8066 ms
+2019-11-21 00:26:45.442 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 25.0281 ms
+2019-11-21 00:27:12.586 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 64.6136 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:27:12.616 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:27:12.705 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 59.6307 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:27:12.737 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:27:12.770 +02:00 [ERR] Connection id "0HLRE11PO3MP7", Request id "0HLRE11PO3MP7:00000014": An unhandled exception was thrown by the application.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 00:27:57.801 +02:00 [INF] Application starting up!
+2019-11-21 00:28:06.537 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:28:07.322 +02:00 [INF] HTTP GET / responded 200 in 721.445 ms
+2019-11-21 00:28:18.133 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 563.2684 ms
+2019-11-21 00:28:18.655 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 497.314 ms
+2019-11-21 00:28:21.832 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 43.9846 ms
+2019-11-21 00:28:23.300 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 444.9289 ms
+2019-11-21 00:28:23.487 +02:00 [INF] HTTP GET /notification?id=k3GjwuakX6UMMdE4pWom8Q responded 101 in 1622.8392 ms
+2019-11-21 00:28:24.357 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.9097 ms
+2019-11-21 00:28:26.232 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 45.5735 ms
+2019-11-21 00:28:28.571 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 8.4245 ms
+2019-11-21 00:30:40.198 +02:00 [INF] Application starting up!
+2019-11-21 00:30:43.362 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:30:44.472 +02:00 [INF] HTTP GET / responded 200 in 1051.9263 ms
+2019-11-21 00:30:53.731 +02:00 [INF] Application starting up!
+2019-11-21 00:31:02.560 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:31:03.290 +02:00 [INF] HTTP GET / responded 200 in 675.8311 ms
+2019-11-21 00:31:11.874 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 678.4229 ms
+2019-11-21 00:31:12.582 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 645.6537 ms
+2019-11-21 00:31:14.086 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 54.6867 ms
+2019-11-21 00:31:23.544 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 417.3644 ms
+2019-11-21 00:31:23.689 +02:00 [INF] HTTP GET /notification?id=teniFWFypRx_HBKcZ4lNCw responded 101 in 9579.2861 ms
+2019-11-21 00:31:24.484 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7433 ms
+2019-11-21 00:31:25.720 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 59.3764 ms
+2019-11-21 00:31:25.730 +02:00 [INF] HTTP GET /notification?id=mjGKTAhirwaTGn6KWLh7gg responded 101 in 1119.3247 ms
+2019-11-21 00:31:26.672 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6725 ms
+2019-11-21 00:31:29.582 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 71.322 ms
+2019-11-21 00:31:29.591 +02:00 [INF] HTTP GET /notification?id=LN2UVObXoP8k64mIT1uc8g responded 101 in 2837.7755 ms
+2019-11-21 00:31:30.444 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6141 ms
+2019-11-21 00:31:31.645 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 172.3949 ms
+2019-11-21 00:31:36.140 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200&status=NotReviewed responded 200 in 2997.8073 ms
+2019-11-21 00:31:38.436 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 16.5006 ms
+2019-11-21 00:31:38.447 +02:00 [INF] HTTP GET /notification?id=GeBoMag8h5-KxBLu2uShxg responded 101 in 7931.1518 ms
+2019-11-21 00:31:39.289 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8373 ms
+2019-11-21 00:31:40.286 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 21.3392 ms
+2019-11-21 00:31:43.557 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200&status=New responded 200 in 2094.0509 ms
+2019-11-21 00:31:46.567 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 67.2223 ms
+2019-11-21 00:31:46.576 +02:00 [INF] HTTP GET /notification?id=j0xyMSxGTwxZJx5x7W52mw responded 101 in 7194.4124 ms
+2019-11-21 00:31:47.842 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6126 ms
+2019-11-21 00:31:54.792 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 21.0741 ms
+2019-11-21 00:33:17.742 +02:00 [INF] Application starting up!
+2019-11-21 00:33:26.449 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:33:27.294 +02:00 [INF] HTTP GET / responded 200 in 755.2351 ms
+2019-11-21 00:33:35.789 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 520.8224 ms
+2019-11-21 00:33:36.332 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 502.9539 ms
+2019-11-21 00:33:37.903 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 36.8146 ms
+2019-11-21 00:33:41.818 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 425.339 ms
+2019-11-21 00:33:41.969 +02:00 [INF] HTTP GET /notification?id=YU12FLkk6vktmXFthre35g responded 101 in 4050.401 ms
+2019-11-21 00:33:42.777 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7847 ms
+2019-11-21 00:33:44.288 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 198.999 ms
+2019-11-21 00:33:50.748 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1&status=NotReviewed responded 200 in 4026.2437 ms
+2019-11-21 00:33:52.819 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 54.2786 ms
+2019-11-21 00:33:52.829 +02:00 [INF] HTTP GET /notification?id=gGvlKuGTjzQ2GFD35uwJjA responded 101 in 9886.7815 ms
+2019-11-21 00:33:53.782 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5695 ms
+2019-11-21 00:33:54.711 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 23.4618 ms
+2019-11-21 00:33:56.322 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1&status=New responded 200 in 20.1292 ms
+2019-11-21 00:33:57.930 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 80.4139 ms
+2019-11-21 00:33:57.937 +02:00 [INF] HTTP GET /notification?id=KJGP9Qjmn221gr0NfgBGWQ responded 101 in 4043.3516 ms
+2019-11-21 00:33:59.132 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.9159 ms
+2019-11-21 00:34:02.999 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 24.2636 ms
+2019-11-21 00:36:27.256 +02:00 [INF] Application starting up!
+2019-11-21 00:36:30.312 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:36:31.190 +02:00 [INF] HTTP GET / responded 200 in 831.4581 ms
+2019-11-21 00:36:46.913 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 473.7361 ms
+2019-11-21 00:36:47.377 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 417.2087 ms
+2019-11-21 00:36:47.994 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 26.8814 ms
+2019-11-21 00:36:51.207 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 402.7255 ms
+2019-11-21 00:36:51.323 +02:00 [INF] HTTP GET /notification?id=A1e8Ea3rRM3k3FIaQVOXbA responded 101 in 3287.9686 ms
+2019-11-21 00:36:51.591 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8636 ms
+2019-11-21 00:36:53.209 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 187.9575 ms
+2019-11-21 00:37:01.413 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 48.0046 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:37:01.492 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:37:01.539 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.4542 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:37:01.574 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:37:01.613 +02:00 [ERR] Connection id "0HLRE18B4QMFR", Request id "0HLRE18B4QMFR:00000009": An unhandled exception was thrown by the application.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 00:38:48.342 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 33.6655 ms
+2019-11-21 00:38:48.355 +02:00 [INF] HTTP GET /notification?id=kSG-BvDgbJAZOw60TI2f5A responded 101 in 116724.2763 ms
+2019-11-21 00:38:49.004 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8101 ms
+2019-11-21 00:38:51.957 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 13.3862 ms
+2019-11-21 00:39:02.191 +02:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [CardId], [EGN], [EmailId], [FirstName], [LastName], [PhoneNumber], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:3348c018-f1cb-4241-bc9f-e1956581fef6
+Error Number:2601,State:1,Class:14
+2019-11-21 00:39:02.240 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'TBIApp.Data.TBIAppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-21 00:39:02.285 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 197.4748 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TBIApp.Services.Services.ApplicationService.CreateAsync(LoanApplicationDTO newLoan) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIApp.Services\Services\ApplicationService.cs:line 36
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 51
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:39:02.343 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TBIApp.Services.Services.ApplicationService.CreateAsync(LoanApplicationDTO newLoan) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIApp.Services\Services\ApplicationService.cs:line 36
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 51
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:39:02.397 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 1.1413 ms
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 00:39:02.428 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.ArgumentException: Invalid application VM!
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 42
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 00:39:02.459 +02:00 [ERR] Connection id "0HLRE18B4QMG3", Request id "0HLRE18B4QMG3:00000008": An unhandled exception was thrown by the application.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (89624855-3625-4484-bc24-12e55d592421).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TBIApp.Services.Services.ApplicationService.CreateAsync(LoanApplicationDTO newLoan) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIApp.Services\Services\ApplicationService.cs:line 36
+   at TBIBankApp.Controllers.ApplicationController.CreateAsync(LoanApplicationViewModel vm) in C:\Users\Ivaka\Desktop\TBIBan-Final\TBIBankApp\Controllers\ApplicationController.cs:line 51
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 00:41:34.750 +02:00 [INF] HTTP GET /notification?id=kfB6ktEPFEg_Nxe4nEN8lQ responded 101 in 165646.9432 ms
+2019-11-21 00:41:40.530 +02:00 [INF] Application starting up!
+2019-11-21 00:41:43.289 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 00:41:44.620 +02:00 [INF] HTTP GET / responded 302 in 1283.6037 ms
+2019-11-21 00:41:45.030 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 375.6147 ms
+2019-11-21 00:41:45.584 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 31.4088 ms
+2019-11-21 00:42:42.393 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 299.8067 ms
+2019-11-21 00:42:42.500 +02:00 [INF] HTTP GET /notification?id=2lfT8oMg2ai7W-aW5OItoQ responded 101 in 56888.2319 ms
+2019-11-21 00:42:42.714 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6864 ms
+2019-11-21 00:42:45.017 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 128.0041 ms
+2019-11-21 00:43:12.973 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 100.0712 ms
+2019-11-21 00:43:13.070 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368&status=Open responded 200 in 85.7915 ms
+2019-11-21 00:43:24.036 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 48.3143 ms
+2019-11-21 00:43:24.046 +02:00 [INF] HTTP GET /notification?id=l9COWbhGkSr3FQ6TGor5tA responded 101 in 41202.3608 ms
+2019-11-21 00:43:24.136 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5415 ms
+2019-11-21 00:43:34.453 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368 responded 200 in 14.1139 ms
+2019-11-21 00:43:36.511 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=0a6d34d1-6ec3-4c86-823f-feb0fd42d368&status=New responded 200 in 60.3171 ms
+2019-11-21 00:44:01.018 +02:00 [INF] HTTP GET /notification?id=Dm1Yhwa8Bq6tKQqWbiKRqw responded 101 in 36736.3068 ms
+2019-11-21 13:09:25.343 +02:00 [INF] Application starting up!
+2019-11-21 13:09:33.734 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:09:34.884 +02:00 [INF] HTTP GET / responded 200 in 1050.3672 ms
+2019-11-21 13:09:38.400 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 595.2337 ms
+2019-11-21 13:09:38.989 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 558.7029 ms
+2019-11-21 13:09:40.515 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 41.3219 ms
+2019-11-21 13:09:47.570 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 391.8986 ms
+2019-11-21 13:09:47.713 +02:00 [INF] HTTP GET /notification?id=OEVqGYtbYPuhS4LIZd7TCg responded 101 in 7156.7779 ms
+2019-11-21 13:09:48.353 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7662 ms
+2019-11-21 13:09:50.747 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=93ecfc0b-685f-4af2-8929-2de5e2a2d200 responded 200 in 47.0599 ms
+2019-11-21 13:09:51.933 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=ad347584-ba3a-435b-ba13-a608036ea8b1 responded 200 in 12.5103 ms
+2019-11-21 13:09:52.876 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=e530516b-f99a-4d0a-a17d-f578faab13f1 responded 200 in 6.4717 ms
+2019-11-21 13:09:53.961 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=89624855-3625-4484-bc24-12e55d592421 responded 200 in 4.7363 ms
+2019-11-21 13:09:54.890 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=156fdf4e-0469-4f2e-a214-754ce844122e responded 200 in 143.8354 ms
+2019-11-21 13:09:58.579 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 69.1767 ms
+2019-11-21 13:09:58.612 +02:00 [INF] HTTP GET /notification?id=r8X5KbFxm3-gX9w31bX41A responded 101 in 10146.0699 ms
+2019-11-21 13:09:59.260 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6658 ms
+2019-11-21 13:10:04.823 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 19.774 ms
+2019-11-21 13:10:04.833 +02:00 [INF] HTTP GET /notification?id=bJrsbcH9QT4NHnnb-7YurQ responded 101 in 5493.1113 ms
+2019-11-21 13:10:05.484 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6699 ms
+2019-11-21 13:10:11.950 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 75.8942 ms
+2019-11-21 13:10:11.961 +02:00 [INF] HTTP GET /notification?id=8v-xGMjYskLWomq-HW8a5g responded 101 in 6375.174 ms
+2019-11-21 13:10:12.616 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.6151 ms
+2019-11-21 13:10:16.902 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=77d61de6-bb68-401b-ac3d-a11040232214 responded 200 in 23.1252 ms
+2019-11-21 13:10:19.250 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=77d61de6-bb68-401b-ac3d-a11040232214&status=New responded 200 in 286.3308 ms
+2019-11-21 13:10:20.196 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 36.8353 ms
+2019-11-21 13:10:20.211 +02:00 [INF] HTTP GET /notification?id=iVzjh-qgmksneVJjI6YWsQ responded 101 in 7513.5825 ms
+2019-11-21 13:10:20.905 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 3.8021 ms
+2019-11-21 13:10:26.860 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 16.2548 ms
+2019-11-21 13:10:26.873 +02:00 [INF] HTTP GET /notification?id=7Ql5t16E4RDoNZq94s_aaA responded 101 in 5892.3226 ms
+2019-11-21 13:10:27.552 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5679 ms
+2019-11-21 13:10:29.714 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=77d61de6-bb68-401b-ac3d-a11040232214 responded 200 in 9.8497 ms
+2019-11-21 13:10:43.147 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410 responded 200 in 14.7895 ms
+2019-11-21 13:10:44.998 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=91ed9fd1-ce8f-4c59-9ecc-c192a17ac410&status=New responded 200 in 236.6214 ms
+2019-11-21 13:10:48.176 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 17.0699 ms
+2019-11-21 13:10:48.186 +02:00 [INF] HTTP GET /notification?id=Bri7idu6jmvzNUIAHFhKaA responded 101 in 20381.8554 ms
+2019-11-21 13:10:49.106 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.6017 ms
+2019-11-21 13:10:51.486 +02:00 [INF] HTTP GET /notification?id=LRxIf46b-cy6TJKzIUe7Yg responded 101 in 2249.426 ms
+2019-11-21 13:12:40.934 +02:00 [INF] Application starting up!
+2019-11-21 13:12:44.000 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:12:52.848 +02:00 [INF] HTTP GET / responded 200 in 8798.3786 ms
+2019-11-21 13:13:00.246 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 347.5788 ms
+2019-11-21 13:13:00.568 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 303.1453 ms
+2019-11-21 13:13:01.160 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 25.4334 ms
+2019-11-21 13:13:10.420 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 356.4625 ms
+2019-11-21 13:13:10.509 +02:00 [INF] HTTP GET /notification?id=zE02V0bVtzN2ZGJRuWGxMA responded 101 in 9335.2679 ms
+2019-11-21 13:13:10.817 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 2.6511 ms
+2019-11-21 13:13:12.416 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=117d3b88-1232-4396-ac33-e2f413fb9a94 responded 200 in 57.8928 ms
+2019-11-21 13:13:14.391 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=117d3b88-1232-4396-ac33-e2f413fb9a94&status=InvalidApplication responded 200 in 101.0108 ms
+2019-11-21 13:13:14.469 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 55.2632 ms
+2019-11-21 13:13:14.480 +02:00 [INF] HTTP GET /notification?id=OwUpOqd8vilhQFMCzS5w2A responded 101 in 3527.0158 ms
+2019-11-21 13:13:14.606 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.1767 ms
+2019-11-21 13:13:17.447 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=117d3b88-1232-4396-ac33-e2f413fb9a94 responded 200 in 5.6393 ms
+2019-11-21 13:13:19.169 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=117d3b88-1232-4396-ac33-e2f413fb9a94 responded 200 in 27.1509 ms
+2019-11-21 13:13:20.569 +02:00 [INF] HTTP GET / responded 302 in 194.8617 ms
+2019-11-21 13:13:20.601 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 23.8401 ms
+2019-11-21 13:13:20.611 +02:00 [INF] HTTP GET /notification?id=fZykExNeKBBX9mIgNbbZ9g responded 101 in 5786.8271 ms
+2019-11-21 13:13:20.996 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 2.2072 ms
+2019-11-21 13:13:22.443 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 16.754 ms
+2019-11-21 13:13:22.454 +02:00 [INF] HTTP GET /notification?id=J7-lbPM2dnjC20XDfYXt-g responded 101 in 1416.5639 ms
+2019-11-21 13:13:22.825 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5559 ms
+2019-11-21 13:13:23.837 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 5.6342 ms
+2019-11-21 13:13:25.304 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6&status=New responded 200 in 20.3429 ms
+2019-11-21 13:13:27.262 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 36.6097 ms
+2019-11-21 13:13:27.276 +02:00 [INF] HTTP GET /notification?id=Xb3fj8AM8V5RRti20QmAdQ responded 101 in 4307.5747 ms
+2019-11-21 13:13:27.365 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5658 ms
+2019-11-21 13:15:14.916 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 14.18 ms
+2019-11-21 13:15:50.169 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 22.3805 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:15:50.252 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:15:50.272 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 1.244 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:15:50.288 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:15:50.304 +02:00 [ERR] Connection id "0HLREEETGGD5J", Request id "0HLREEETGGD5J:00000014": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:15:58.005 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 15.9876 ms
+2019-11-21 13:15:59.561 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 10.8076 ms
+2019-11-21 13:16:00.749 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 10.4804 ms
+2019-11-21 13:16:10.385 +02:00 [INF] Application starting up!
+2019-11-21 13:16:18.126 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:16:18.838 +02:00 [INF] HTTP GET / responded 200 in 662.5773 ms
+2019-11-21 13:16:21.644 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 410.8914 ms
+2019-11-21 13:16:22.067 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 398.8967 ms
+2019-11-21 13:16:23.251 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 37.9606 ms
+2019-11-21 13:16:26.218 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 319.179 ms
+2019-11-21 13:16:26.468 +02:00 [INF] HTTP GET /notification?id=6wdp53jxFNi-EPKVJdZ6qg responded 101 in 3167.0135 ms
+2019-11-21 13:16:26.901 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.2063 ms
+2019-11-21 13:16:28.775 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 325.9009 ms
+2019-11-21 13:17:50.838 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 23.5554 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:17:50.926 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:17:50.968 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 8.2947 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:17:50.994 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:17:51.021 +02:00 [ERR] Connection id "0HLREEGSL4MV7", Request id "0HLREEGSL4MV7:00000006": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:18:11.422 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 61.8285 ms
+2019-11-21 13:18:29.943 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 17.4285 ms
+2019-11-21 13:19:20.993 +02:00 [INF] HTTP GET /notification?id=J2TprvkQ70WIVX6YlNPxkw responded 101 in 173981.2142 ms
+2019-11-21 13:19:20.993 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 27.0296 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:21.053 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:21.089 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.8877 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:21.126 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:21.166 +02:00 [ERR] Connection id "0HLREEGSL4MV7", Request id "0HLREEGSL4MV7:00000009": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:19:48.035 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 35.419 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:48.076 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 9.4874 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:48.113 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:48.147 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:48.193 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 5.0765 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:48.234 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 7.0244 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:19:48.267 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:48.302 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:19:48.370 +02:00 [ERR] Connection id "0HLREEGSL4MV7", Request id "0HLREEGSL4MV7:0000000A": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:19:48.427 +02:00 [ERR] Connection id "0HLREEGSL4MVA", Request id "0HLREEGSL4MVA:00000004": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:20:38.036 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 13.2013 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:20:42.423 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:20:42.487 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.9323 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:20:42.524 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:20:42.601 +02:00 [ERR] Connection id "0HLREEGSL4MVA", Request id "0HLREEGSL4MVA:00000005": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:21:12.954 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 23.0762 ms
+2019-11-21 13:21:15.833 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 17.8051 ms
+2019-11-21 13:21:17.390 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 15.8536 ms
+2019-11-21 13:21:18.636 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 36.506 ms
+2019-11-21 13:21:19.433 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 9.9444 ms
+2019-11-21 13:21:20.624 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 19.2222 ms
+2019-11-21 13:21:22.166 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 10.0439 ms
+2019-11-21 13:21:31.374 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 16.23 ms
+2019-11-21 13:21:41.409 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.927 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:21:41.449 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:21:41.489 +02:00 [ERR] HTTP POST /Application/CreateAsync responded 500 in 2.1675 ms
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2019-11-21 13:21:41.517 +02:00 [ERR] An exception was thrown attempting to execute the error handler.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-11-21 13:21:41.546 +02:00 [ERR] Connection id "0HLREEGSL4MV7", Request id "0HLREEGSL4MV7:00000013": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Unable to resolve service for type 'TBIApp.Services.Services.Contracts.IcheckCardIdService' while attempting to activate 'TBIBankApp.Controllers.ApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-11-21 13:23:00.791 +02:00 [INF] Application starting up!
+2019-11-21 13:23:09.488 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:23:10.231 +02:00 [INF] HTTP GET / responded 200 in 653.3054 ms
+2019-11-21 13:23:22.915 +02:00 [INF] HTTP GET / responded 200 in 225.6359 ms
+2019-11-21 13:23:26.718 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 416.0337 ms
+2019-11-21 13:23:27.080 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 344.019 ms
+2019-11-21 13:23:28.203 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 45.1341 ms
+2019-11-21 13:23:30.657 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 490.7791 ms
+2019-11-21 13:23:30.759 +02:00 [INF] HTTP GET /notification?id=btCCssW0KVUbmEfUPAb6jw responded 101 in 2540.7229 ms
+2019-11-21 13:23:31.430 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 2.9102 ms
+2019-11-21 13:23:33.011 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=284b0c7d-1367-4d93-a7c5-a9c88127253e responded 200 in 164.1833 ms
+2019-11-21 13:23:34.663 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=284b0c7d-1367-4d93-a7c5-a9c88127253e&status=New responded 200 in 165.44 ms
+2019-11-21 13:23:35.736 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 45.5042 ms
+2019-11-21 13:23:35.745 +02:00 [INF] HTTP GET /notification?id=Tfq_z-PPzB8N7s17S3hk-g responded 101 in 4198.6958 ms
+2019-11-21 13:23:36.405 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.2304 ms
+2019-11-21 13:23:38.835 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=284b0c7d-1367-4d93-a7c5-a9c88127253e responded 200 in 17.2004 ms
+2019-11-21 13:27:23.834 +02:00 [INF] Application starting up!
+2019-11-21 13:27:28.975 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:27:29.540 +02:00 [INF] HTTP GET / responded 302 in 512.9619 ms
+2019-11-21 13:27:30.248 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 662.0003 ms
+2019-11-21 13:27:31.013 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 33.4659 ms
+2019-11-21 13:35:06.873 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 1300.6081 ms
+2019-11-21 13:35:06.976 +02:00 [INF] HTTP GET /notification?id=ffZ2aMwYZXRmI4JuG305sA responded 101 in 455928.1711 ms
+2019-11-21 13:35:07.255 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.8696 ms
+2019-11-21 13:35:09.976 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 77.8654 ms
+2019-11-21 13:35:09.986 +02:00 [INF] HTTP GET /notification?id=fMIP8oQV8kzkXbo_N8DLCg responded 101 in 2702.9438 ms
+2019-11-21 13:35:10.084 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5974 ms
+2019-11-21 13:35:13.543 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 135.1266 ms
+2019-11-21 13:35:16.265 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a&status=New responded 200 in 110.8867 ms
+2019-11-21 13:35:19.464 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 43.5998 ms
+2019-11-21 13:35:19.475 +02:00 [INF] HTTP GET /notification?id=BEALdYP-xfO2FINSq8xUEg responded 101 in 9252.362 ms
+2019-11-21 13:35:19.561 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5133 ms
+2019-11-21 13:35:21.716 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 12.1407 ms
+2019-11-21 13:36:44.923 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 45.6685 ms
+2019-11-21 13:37:31.241 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 31.2494 ms
+2019-11-21 13:37:38.783 +02:00 [INF] Application starting up!
+2019-11-21 13:37:48.509 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:37:49.571 +02:00 [INF] HTTP GET / responded 200 in 1000.0891 ms
+2019-11-21 13:37:56.271 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 671.0756 ms
+2019-11-21 13:37:56.847 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 549.1995 ms
+2019-11-21 13:37:58.244 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 35.0711 ms
+2019-11-21 13:38:00.358 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 597.4731 ms
+2019-11-21 13:38:00.549 +02:00 [INF] HTTP GET /notification?id=X71ap74Uz0c1BTD7Uae5qg responded 101 in 2247.9497 ms
+2019-11-21 13:38:01.271 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 6.532 ms
+2019-11-21 13:38:03.085 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 145.0739 ms
+2019-11-21 13:41:48.128 +02:00 [INF] HTTP GET /notification?id=qqzjLvP0g8XVf3zth8z91g responded 101 in 226726.8546 ms
+2019-11-21 13:41:59.896 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 156605.3853 ms
+2019-11-21 13:45:28.473 +02:00 [INF] Application starting up!
+2019-11-21 13:45:31.176 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:45:32.341 +02:00 [INF] HTTP GET / responded 302 in 1104.8387 ms
+2019-11-21 13:45:32.700 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 313.6525 ms
+2019-11-21 13:45:33.219 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 25.3688 ms
+2019-11-21 13:45:56.245 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 279.6533 ms
+2019-11-21 13:45:56.326 +02:00 [INF] HTTP GET /notification?id=Fkr-ENR4mJFxIRlEUiXJmA responded 101 in 23075.4648 ms
+2019-11-21 13:45:56.550 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 1.8626 ms
+2019-11-21 13:45:57.571 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 32.0605 ms
+2019-11-21 13:45:58.196 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1f504084-4501-47d0-a6f4-95c9111fe9b6 responded 200 in 2.5635 ms
+2019-11-21 13:45:58.965 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=284b0c7d-1367-4d93-a7c5-a9c88127253e responded 200 in 2.0403 ms
+2019-11-21 13:48:11.908 +02:00 [INF] HTTP GET /notification?id=q5KmUznwZv1WZZJCm-mdLg responded 101 in 135317.9821 ms
+2019-11-21 13:48:19.936 +02:00 [INF] Application starting up!
+2019-11-21 13:48:22.090 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 13:48:22.833 +02:00 [INF] HTTP GET / responded 302 in 676.5836 ms
+2019-11-21 13:48:23.376 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 513.3101 ms
+2019-11-21 13:48:23.887 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 33.6902 ms
+2019-11-21 13:49:10.205 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 296.1585 ms
+2019-11-21 13:49:10.283 +02:00 [INF] HTTP GET /notification?id=o7nOeB6ZxkAPOH5m1S6kNw responded 101 in 46362.3155 ms
+2019-11-21 13:49:10.615 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.714 ms
+2019-11-21 13:49:12.235 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 135.1809 ms
+2019-11-21 13:53:09.445 +02:00 [INF] HTTP POST /Application/CreateAsync responded 200 in 127.658 ms
+2019-11-21 13:53:09.573 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a&status=Open responded 200 in 111.9289 ms
+2019-11-21 13:54:34.699 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 56.1903 ms
+2019-11-21 13:54:34.733 +02:00 [INF] HTTP GET /notification?id=0noxAKlXY8alZRhh7laNDQ responded 101 in 324087.6775 ms
+2019-11-21 13:54:34.821 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6148 ms
+2019-11-21 13:55:28.860 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Closed responded 200 in 45.2727 ms
+2019-11-21 13:55:28.869 +02:00 [INF] HTTP GET /notification?id=FTr8hmDtOCglokZPmBXjAQ responded 101 in 53917.2669 ms
+2019-11-21 13:55:28.960 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.4318 ms
+2019-11-21 13:57:41.361 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 62.7386 ms
+2019-11-21 13:57:41.370 +02:00 [INF] HTTP GET /notification?id=7TqNjgENRK5Fo2m1RWFGcQ responded 101 in 132271.9298 ms
+2019-11-21 13:57:41.614 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5812 ms
+2019-11-21 13:57:48.646 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 21.7088 ms
+2019-11-21 13:57:48.660 +02:00 [INF] HTTP GET /notification?id=EYJm1qEo0xXd_ppkkAjlNg responded 101 in 6963.4515 ms
+2019-11-21 13:57:48.821 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.7036 ms
+2019-11-21 13:57:50.181 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=17acfb35-225a-4874-b92d-8b4de46d4edb responded 200 in 14.5705 ms
+2019-11-21 13:57:51.768 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=17acfb35-225a-4874-b92d-8b4de46d4edb&status=New responded 200 in 28.6002 ms
+2019-11-21 13:57:51.806 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=New responded 200 in 14.1996 ms
+2019-11-21 13:57:51.822 +02:00 [INF] HTTP GET /notification?id=Pm4HzwxbP-jbLsMcQqtusg responded 101 in 2947.8735 ms
+2019-11-21 13:57:51.894 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6308 ms
+2019-11-21 13:57:56.442 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 16.6538 ms
+2019-11-21 13:57:56.454 +02:00 [INF] HTTP GET /notification?id=KkBF5xMBXzEQpUfIxP9k0g responded 101 in 4451.9718 ms
+2019-11-21 13:57:56.545 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5451 ms
+2019-11-21 13:57:58.364 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=33c56d38-f3d4-4d9f-a849-43b469f8ca0f responded 200 in 11.9224 ms
+2019-11-21 13:57:59.748 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=33c56d38-f3d4-4d9f-a849-43b469f8ca0f&status=InvalidApplication responded 200 in 15.4249 ms
+2019-11-21 13:57:59.805 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=InvalidApplication responded 200 in 35.81 ms
+2019-11-21 13:57:59.819 +02:00 [INF] HTTP GET /notification?id=sJq4Hdcqav7aWfcnYxF_aw responded 101 in 3102.5266 ms
+2019-11-21 13:57:59.891 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.5531 ms
+2019-11-21 13:58:01.387 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=33c56d38-f3d4-4d9f-a849-43b469f8ca0f responded 200 in 11.8326 ms
+2019-11-21 13:58:02.469 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=33c56d38-f3d4-4d9f-a849-43b469f8ca0f&status=NotReviewed responded 200 in 16.2773 ms
+2019-11-21 13:58:02.516 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=NotReviewed responded 200 in 24.5127 ms
+2019-11-21 13:58:02.533 +02:00 [INF] HTTP GET /notification?id=hjp_R6eM2g8o-fCj_nSdNg responded 101 in 2559.0402 ms
+2019-11-21 13:58:02.605 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6522 ms
+2019-11-21 13:58:04.451 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Open responded 200 in 11.7467 ms
+2019-11-21 13:58:04.464 +02:00 [INF] HTTP GET /notification?id=2xazinsBcCSQYAcCyvah8g responded 101 in 1776.0787 ms
+2019-11-21 13:58:04.539 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6381 ms
+2019-11-21 13:58:05.629 +02:00 [INF] HTTP GET /Email/IsItOpenAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 11.0948 ms
+2019-11-21 13:58:09.357 +02:00 [INF] HTTP GET /Email/ChangeStatusAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a&status=Closed responded 200 in 27.0884 ms
+2019-11-21 13:58:09.413 +02:00 [INF] HTTP GET /Email/ListEmailsAsync?emailStatus=Closed responded 200 in 31.0072 ms
+2019-11-21 13:58:09.426 +02:00 [INF] HTTP GET /notification?id=NIZrt4WRPyfwxjhLCAUZqg responded 101 in 4811.5625 ms
+2019-11-21 13:58:09.509 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 3.1198 ms
+2019-11-21 13:58:11.441 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 17.5575 ms
+2019-11-21 13:58:18.370 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 2.7339 ms
+2019-11-21 13:58:19.214 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.9084 ms
+2019-11-21 13:58:19.481 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 2.4078 ms
+2019-11-21 13:58:19.663 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.9688 ms
+2019-11-21 13:58:19.812 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.7179 ms
+2019-11-21 13:58:19.981 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.9323 ms
+2019-11-21 13:58:20.113 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.8091 ms
+2019-11-21 13:58:20.282 +02:00 [INF] HTTP GET /Email/SetToEnableAsync?id=1b005094-4a8b-4d2d-99b8-4a3a921a504a responded 200 in 1.9945 ms
+2019-11-21 14:08:02.761 +02:00 [INF] HTTP GET /notification?id=nZTCSPeXgSF4gW5CNQ8wfQ responded 101 in 593168.1946 ms
+2019-11-21 15:21:38.225 +02:00 [INF] Application starting up!
+2019-11-21 15:21:40.451 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-21 15:21:41.147 +02:00 [INF] HTTP GET / responded 302 in 640.2004 ms
+2019-11-21 15:21:41.492 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 308.394 ms
+2019-11-21 15:21:41.931 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 26.6509 ms
+2019-11-21 15:21:56.845 +02:00 [INF] HTTP GET /Manager/Register responded 200 in 84.7779 ms
+2019-11-21 15:21:56.942 +02:00 [INF] HTTP GET /notification?id=po5C_RGKRYYnsf53637icw responded 101 in 14985.5345 ms
+2019-11-21 15:22:31.140 +02:00 [INF] HTTP GET / responded 302 in 323.04 ms
+2019-11-21 15:22:31.230 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 71.2245 ms
+2019-11-21 15:22:31.441 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.6896 ms
+2019-11-21 15:38:48.519 +02:00 [INF] HTTP GET /notification?id=BPnZzSRn0zvv4Yh5lndVAg responded 101 in 976866.2552 ms
+2019-11-21 16:31:26.432 +02:00 [INF] HTTP GET /Home/Privacy responded 200 in 43.0503 ms
+2019-11-21 16:31:26.824 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 0.9265 ms
+2019-11-21 16:31:41.775 +02:00 [INF] HTTP GET /notification?id=hns0Zv0xaTnvU0oEGJggww responded 101 in 14904.5681 ms

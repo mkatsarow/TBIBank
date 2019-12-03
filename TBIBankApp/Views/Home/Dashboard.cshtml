@@ -1,0 +1,141 @@
+﻿@model ReportDiagramViewModel
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/customDiagram.css" />
+}
+<body>
+    <div class="row">
+        <div id="diagram" class="col-md-6 col-sm-12">
+
+            <div id="chartContainer" style="height: 370px; width: 100%; margin-top: 33px;"></div>
+            <div id="invalidcount" data-value="@Model.InvalidCount"></div>
+            <div id="notreviewedcount" data-value="@Model.NotReviewedCount"></div>
+            <div id="closedcount" data-value="@Model.ClosedCount"></div>
+            <div id="newcount" data-value="@Model.NewCount"></div>
+            <div id="opencount" data-value="@Model.OpenCount"></div>
+            <div id="acceptedcount" data-value="@Model.AcceptedCount"></div>
+            <div id="rejectedcount" data-value="@Model.RejectedCount"></div>
+
+            <img src="~/images/whiteCorrector.jpg" id="whiteCorrector" />
+        </div>
+        <div id="curOnline" class="col-md-6">
+
+            <h4>
+                Current Online
+            </h4>
+            <div class="col-12">
+          
+                @foreach (var item in Model.OnlineUsers)
+                {
+
+                <div id="@item.UserName+remove">
+
+                    <div id="accordion">
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#@item.UserName" aria-expanded="false" aria-controls="collapseThree">
+                                        @item.UserName - Operator
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="@item.UserName" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        First name: @item.FirstName
+                                    </p>
+                                    <p>
+                                        Last name: @item.LastName
+                                    </p>
+                                    <p>
+                                        Email: @item.Email
+                                    </p>
+                                    <p>
+                                        Count of Updated Emails: @item.UserEmailsCount
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+                @*<nav aria-label="Page navigation example">
+                    <ul class="pagination">
+
+                        <a asp-controller="BlogPosts" asp-action="ViewAllPosts" asp-route-Id="">
+                            <button type="submit" class="btn btn-primary">Previous</button>
+                        </a>
+
+                        <a asp-controller="BlogPosts" asp-action="ViewAllPosts" asp-route-Id="">
+                            <button type="submit" class="btn btn-primary">Next</button>
+                        </a>
+                    </ul>
+                </nav>*@
+
+            </div>
+        </div>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-12">
+            <p id="buttons">
+                <span>Additional help</span>
+                <br />
+                <br />
+                <button class="btn btn-primary hulk" type="button"  data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Shortcuts</button>
+                <button class="btn btn-primary hulk" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Colors Meaning</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <ul>
+                                Using these shortcuts you can easily navigate into the different pages in the website
+                                <li>Alt+N - New</li>
+                                <li>Alt+O - Opened</li>
+                                <li>Alt+R - Not Reviewed</li>
+                                <li>Alt+C - Closed</li>
+                                <li>Alt+I - Invalid</li>
+
+                                <li>Alt+B - New Registration (If you are a Manager)</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <p>
+                                <span id="orange">Orange</span>
+                                button - it's safe, you can Save changes, Preview emails, etc.
+                            </p>
+                            <p>
+                                <span id="gray-button">Gray</span>
+                                button - be careful - you can set an Email to invalid.
+                            </p>
+                            <p>
+                                <span id="light-gray-button">Light gray</span>
+                                button - return one step back.
+                            </p>
+                            <p>
+                                <span id="gray">Gray background</span>
+                                into Email list- someone else has open this Email and it's currently unable to changes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+@section Scripts{
+        
+    <script src="~/js/currentOnline.js"></script>
+    <script type="text/javascript" src="~/js/canvas.js"></script>
+    <script type="text/javascript" src="~/js/customDiagram.js"></script>
+}

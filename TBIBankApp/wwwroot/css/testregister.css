@@ -1,0 +1,93 @@
+﻿html, body, #entirePage {
+    height: 96%;
+    width: 100%;
+}
+
+#background {
+    background-image: url('../images/registration-image2.jpg');
+    background-attachment: fixed;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.registerClass {
+    background: white;
+    padding: 35px 0px 35px 40px;
+    border: 3px solid #EC7423;
+    border-radius: 5px;
+    width: 550px;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 35px;
+}
+
+.col.s6 > .btn {
+    color: white;
+    background: #EC7423;
+    border: 1px solid #EC7423;
+    margin-left: -14px;
+    margin-top: 10px;
+    width: 39%;
+    margin-left: 247px;
+}
+
+    .col.s6 > .btn:hover {
+        color: #EC7423;
+        border: 1px solid #EC7423;
+        background: #FFF;
+    }
+
+.gender-male, .gender-female {
+    display: inline-block;
+    margin-left: -12px;
+}
+
+.gender-female {
+    margin-left: 35px;
+}
+
+radio:required {
+    border-color: red;
+}
+
+
+
+@keyframes showUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transoform: scale(1);
+    }
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.ngl {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+button, input {
+    color: #000;
+}
+
+#registrationForm > h1, h4 {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 10px;
+    left: -7%;
+    color: #EC7423;
+}
+
+legend {
+    font-size: 1rem;
+    left: -15px;
+    position: relative;
+}
