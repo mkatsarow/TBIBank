@@ -1,0 +1,110 @@
+2019-12-04 12:29:33.101 +02:00 [INF] Application starting up!
+2019-12-04 12:29:56.633 +02:00 [FTL] Application startup exception
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at TBIBankApp.Infrastructure.Extensions.ApplicationBuilderExtensions.UpdateDatabase(IApplicationBuilder app) in C:\Users\imkat\Desktop\TBI Bank\TBIBankApp\Infrastructure\Extensions\ApplicationBuilderExtensions.cs:line 22
+   at TBIBankApp.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\imkat\Desktop\TBI Bank\TBIBankApp\Startup.cs:line 114
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-12-04 12:41:31.439 +02:00 [INF] Application starting up!
+2019-12-04 12:41:35.652 +02:00 [ERR] Failed executing DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'AspNetRoles' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+ClientConnectionId:9c6daec0-0b58-4630-ab91-ab4eddb9d8db
+Error Number:2714,State:6,Class:16
+2019-12-04 12:41:35.823 +02:00 [FTL] Application startup exception
+System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'AspNetRoles' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.MigrationCommand.ExecuteNonQuery(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.MigrationCommandExecutor.ExecuteNonQuery(IEnumerable`1 migrationCommands, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at TBIBankApp.Infrastructure.Extensions.ApplicationBuilderExtensions.UpdateDatabase(IApplicationBuilder app) in C:\Users\imkat\Desktop\TBI Bank\TBIBankApp\Infrastructure\Extensions\ApplicationBuilderExtensions.cs:line 22
+   at TBIBankApp.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\imkat\Desktop\TBI Bank\TBIBankApp\Startup.cs:line 114
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+ClientConnectionId:9c6daec0-0b58-4630-ab91-ab4eddb9d8db
+Error Number:2714,State:6,Class:16
+2019-12-04 12:46:16.453 +02:00 [INF] Application starting up!
+2019-12-04 12:46:21.683 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-12-04 12:46:22.172 +02:00 [INF] HTTP GET / responded 200 in 443.7269 ms
+2019-12-04 12:46:49.198 +02:00 [INF] HTTP POST /Home/CheckForUserNameAndPassowrdAsync responded 200 in 667.3913 ms
+2019-12-04 12:46:49.993 +02:00 [INF] HTTP GET /Home/Dashboard responded 200 in 764.7897 ms
+2019-12-04 12:46:50.066 +02:00 [INF] HTTP GET /Home/vendor/bootstrap/css/bootstrap.min.css responded 302 in 7.9959 ms
+2019-12-04 12:46:50.075 +02:00 [INF] HTTP GET /Home/fonts/iconic/css/material-design-iconic-font.min.css responded 302 in 1.6791 ms
+2019-12-04 12:46:50.077 +02:00 [INF] HTTP GET /Home/vendor/css-hamburgers/hamburgers.min.css responded 302 in 0.6536 ms
+2019-12-04 12:46:50.080 +02:00 [INF] HTTP GET /Home/vendor/animate/animate.css responded 302 in 0.8044 ms
+2019-12-04 12:46:50.083 +02:00 [INF] HTTP GET /Home/fonts/font-awesome-4.7.0/css/font-awesome.min.css responded 302 in 0.7298 ms
+2019-12-04 12:46:50.091 +02:00 [INF] HTTP GET /Home/vendor/daterangepicker/daterangepicker.css responded 302 in 0.6337 ms
+2019-12-04 12:46:50.098 +02:00 [INF] HTTP GET /Home/vendor/animsition/css/animsition.min.css responded 302 in 0.9016 ms
+2019-12-04 12:46:50.109 +02:00 [INF] HTTP GET /Home/vendor/select2/select2.min.css responded 302 in 0.7236 ms
+2019-12-04 12:46:50.176 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 39.2893 ms
+2019-12-04 12:46:50.180 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.0429 ms
+2019-12-04 12:46:50.184 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 0.855 ms
+2019-12-04 12:46:50.189 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.5382 ms
+2019-12-04 12:46:50.198 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.6412 ms
+2019-12-04 12:46:50.217 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 2.501 ms
+2019-12-04 12:46:50.233 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 0.9941 ms
+2019-12-04 12:46:50.256 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.0835 ms
+2019-12-04 12:46:52.140 +02:00 [INF] HTTP POST /notification/negotiate responded 200 in 30.6016 ms
+2019-12-04 12:46:52.235 +02:00 [INF] HTTP GET /Home/images/icons/favicon.ico responded 302 in 0.9578 ms
+2019-12-04 12:46:52.242 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.0927 ms
+2019-12-04 12:46:52.249 +02:00 [INF] HTTP GET /Home/images/icons/favicon.ico responded 302 in 0.4927 ms
+2019-12-04 12:46:52.254 +02:00 [INF] HTTP GET /Home/PageNotFound responded 200 in 1.5523 ms
