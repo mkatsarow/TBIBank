@@ -83,8 +83,7 @@ namespace TBIApp.UnitTesting.Service.CheckEgnServiceTests
             var expectedResult = true;
 
             Assert.AreEqual(expectedResult, sut);
-
-        }
+                    }
 
         [TestMethod]
         public async Task isValidMonthAndDate_ShouldReturn_False()

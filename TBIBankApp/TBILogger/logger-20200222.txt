@@ -1,0 +1,4 @@
+2020-02-22 13:31:43.280 +02:00 [INF] Application starting up!
+2020-02-22 13:31:51.215 +02:00 [INF] HTTP GET / responded 200 in 548.7867 ms
+2020-02-22 13:32:47.444 +02:00 [INF] Application starting up!
+2020-02-22 13:32:52.758 +02:00 [INF] HTTP GET / responded 200 in 469.1851 ms

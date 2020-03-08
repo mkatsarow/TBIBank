@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using TBIApp.Data;
@@ -26,10 +27,17 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
-
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null,
-                null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                   new Mock<IUserStore<User>>().Object,
+                   new Mock<IOptions<IdentityOptions>>().Object,
+                   new Mock<IPasswordHasher<User>>().Object,
+                   new IUserValidator<User>[0],
+                   new IPasswordValidator<User>[0],
+                   new Mock<ILookupNormalizer>().Object,
+                   new Mock<IdentityErrorDescriber>().Object,
+                   new Mock<IServiceProvider>().Object,
+                   new Mock<ILogger<UserManager<User>>>().Object);
 
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>();
             var mockEmail = new Mock<Email>().Object;
@@ -62,7 +70,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                   new Mock<IUserStore<User>>().Object,
+                   new Mock<IOptions<IdentityOptions>>().Object,
+                   new Mock<IPasswordHasher<User>>().Object,
+                   new IUserValidator<User>[0],
+                   new IPasswordValidator<User>[0],
+                   new Mock<ILookupNormalizer>().Object,
+                   new Mock<IdentityErrorDescriber>().Object,
+                   new Mock<IServiceProvider>().Object,
+                   new Mock<ILogger<UserManager<User>>>().Object);
 
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>();
             var mockEmail = new Mock<Email>().Object;
@@ -73,7 +90,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var mockEmailService = new EmailService(assertContext, mockEmailDTOMapper.Object, 
-                    mockDecodeService, mockLogger,mockUserManager,mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object,mockEncryptService);
 
                 var sut = await mockEmailService.CreateAsync(mockEmailDTO);
 
@@ -117,8 +134,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockAttachment = new Mock<Attachment>().Object;
             var mockAttachmentDTO = new Mock<AttachmentDTO>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
-
+            var mockUserManager = new Mock<UserManager<User>>(
+                   new Mock<IUserStore<User>>().Object,
+                   new Mock<IOptions<IdentityOptions>>().Object,
+                   new Mock<IPasswordHasher<User>>().Object,
+                   new IUserValidator<User>[0],
+                   new IPasswordValidator<User>[0],
+                   new Mock<ILookupNormalizer>().Object,
+                   new Mock<IdentityErrorDescriber>().Object,
+                   new Mock<IServiceProvider>().Object,
+                   new Mock<ILogger<UserManager<User>>>().Object);
 
 
             var testDate = DateTime.Now;
@@ -147,7 +172,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             {
 
                 var mockEmailService = new EmailService(assertContext, mockEmailDTOMapper.Object, 
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 await mockEmailService.CreateAsync(mockEmailDTO);
 
@@ -174,7 +199,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                   new Mock<IUserStore<User>>().Object,
+                   new Mock<IOptions<IdentityOptions>>().Object,
+                   new Mock<IPasswordHasher<User>>().Object,
+                   new IUserValidator<User>[0],
+                   new IPasswordValidator<User>[0],
+                   new Mock<ILookupNormalizer>().Object,
+                   new Mock<IdentityErrorDescriber>().Object,
+                   new Mock<IServiceProvider>().Object,
+                   new Mock<ILogger<UserManager<User>>>().Object);
 
 
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>();
@@ -186,7 +220,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var mockEmailService = new EmailService(assertContext, mockEmailDTOMapper.Object,
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 var sut = await mockEmailService.CreateAsync(null);
             }
@@ -200,10 +234,6 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>().Object;
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
-
-         
-
-
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -240,7 +270,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                  new Mock<IUserStore<User>>().Object,
+                  new Mock<IOptions<IdentityOptions>>().Object,
+                  new Mock<IPasswordHasher<User>>().Object,
+                  new IUserValidator<User>[0],
+                  new IPasswordValidator<User>[0],
+                  new Mock<ILookupNormalizer>().Object,
+                  new Mock<IdentityErrorDescriber>().Object,
+                  new Mock<IServiceProvider>().Object,
+                  new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -257,7 +296,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 var sut = await emailService.IsOpenAsync(testId);
             }
@@ -319,10 +358,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
-
-
-
+            var mockUserManager = new Mock<UserManager<User>>(
+                  new Mock<IUserStore<User>>().Object,
+                  new Mock<IOptions<IdentityOptions>>().Object,
+                  new Mock<IPasswordHasher<User>>().Object,
+                  new IUserValidator<User>[0],
+                  new IPasswordValidator<User>[0],
+                  new Mock<ILookupNormalizer>().Object,
+                  new Mock<IdentityErrorDescriber>().Object,
+                  new Mock<IServiceProvider>().Object,
+                  new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -341,7 +386,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 var sut = await emailService.IsOpenAsync(testId);
 
@@ -358,7 +403,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -377,7 +431,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger, mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger, mockUserManager.Object, mockEncryptService);
 
                 await emailService.LockButtonAsync(testId);
 
@@ -396,7 +450,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -413,7 +476,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 await emailService.LockButtonAsync(testId);
 
@@ -435,7 +498,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
 
             var testId = "TestId";
@@ -443,7 +515,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 await emailService.LockButtonAsync(testId);
             }
@@ -483,7 +555,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -502,7 +583,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger, mockUserManager,mockEncryptService);
+                    mockDecodeService, mockLogger, mockUserManager.Object,mockEncryptService);
 
                 await emailService.UnLockButtonAsync(testId);
 
@@ -520,10 +601,17 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>().Object;
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
-
             var userStoreMock = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null).Object;
-
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -540,7 +628,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper,
-                    mockDecodeService, mockLogger, mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger, mockUserManager.Object, mockEncryptService);
 
                 await emailService.UnLockButtonAsync(testId);
 
@@ -589,7 +677,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
 
@@ -601,7 +698,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailDTOMapper, mockDecodeService,
-                    mockLogger,mockUserManager, mockEncryptService);
+                    mockLogger,mockUserManager.Object, mockEncryptService);
 
                 await sut.UnLockButtonAsync(testId);
             }
@@ -616,7 +713,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+                    new Mock<IUserStore<User>>().Object,
+                    new Mock<IOptions<IdentityOptions>>().Object,
+                    new Mock<IPasswordHasher<User>>().Object,
+                    new IUserValidator<User>[0],
+                    new IPasswordValidator<User>[0],
+                    new Mock<ILookupNormalizer>().Object,
+                    new Mock<IdentityErrorDescriber>().Object,
+                    new Mock<IServiceProvider>().Object,
+                    new Mock<ILogger<UserManager<User>>>().Object);
 
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEmail = new Mock<Email>().Object;
@@ -640,7 +746,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var emailService = new EmailService(assertContext, mockEmailDTOMapper, 
-                    mockDecodeService, mockLogger,mockUserManager, mockEncryptService);
+                    mockDecodeService, mockLogger, mockUserManager.Object, mockEncryptService);
 
                 await emailService.ChangeStatusAsync(testId, newEmailStatus,mockUser);
 
@@ -660,7 +766,17 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+              new Mock<IUserStore<User>>().Object,
+              new Mock<IOptions<IdentityOptions>>().Object,
+              new Mock<IPasswordHasher<User>>().Object,
+              new IUserValidator<User>[0],
+              new IPasswordValidator<User>[0],
+              new Mock<ILookupNormalizer>().Object,
+              new Mock<IdentityErrorDescriber>().Object,
+              new Mock<IServiceProvider>().Object,
+              new Mock<ILogger<UserManager<User>>>().Object);
+
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
 
             var testId = "testId";
@@ -670,7 +786,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailDTOMapper, 
-                    mockDecodeService, mockLogger, null,mockEncryptService);
+                    mockDecodeService, mockLogger, mockUserManager.Object,mockEncryptService);
 
                 await sut.ChangeStatusAsync(testId, newEmailStatus, mockUser);
             }
@@ -711,8 +827,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>().Object;
             var decodeService = new Mock<IDecodeService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
-
+            var mockUserManager = new Mock<UserManager<User>>(
+                 new Mock<IUserStore<User>>().Object,
+                 new Mock<IOptions<IdentityOptions>>().Object,
+                 new Mock<IPasswordHasher<User>>().Object,
+                 new IUserValidator<User>[0],
+                 new IPasswordValidator<User>[0],
+                 new Mock<ILookupNormalizer>().Object,
+                 new Mock<IdentityErrorDescriber>().Object,
+                 new Mock<IServiceProvider>().Object,
+                 new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
 
@@ -732,7 +856,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailDTOMapper, 
-                    decodeService, mockLogger, mockUserManager, mockEncryptService);
+                    decodeService, mockLogger, mockUserManager.Object, mockEncryptService);
 
                 var result = await sut.GetEmailsPagesByTypeAsync((EmailStatusesEnum)status);
 
@@ -791,7 +915,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>().Object;
             var decodeService = new Mock<IDecodeService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+              new Mock<IUserStore<User>>().Object,
+              new Mock<IOptions<IdentityOptions>>().Object,
+              new Mock<IPasswordHasher<User>>().Object,
+              new IUserValidator<User>[0],
+              new IPasswordValidator<User>[0],
+              new Mock<ILookupNormalizer>().Object,
+              new Mock<IdentityErrorDescriber>().Object,
+              new Mock<IServiceProvider>().Object,
+              new Mock<ILogger<UserManager<User>>>().Object);
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockUser = new Mock<User>().Object;
@@ -802,7 +935,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailDTOMapper, 
-                    decodeService, mockLogger,mockUserManager, mockEncryptService);
+                    decodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 var result = await sut.GetCurrentPageEmailsAsync(page, statusOfEmail,mockUser);
 
@@ -818,7 +951,16 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             var mockEmailDTOMapper = new Mock<IEmailDTOMapper>().Object;
             var mockDecodeService = new Mock<IDecodeService>().Object;
             var mockUserStore = new Mock<IUserStore<User>>();
-            var mockUserManager = new Mock<UserManager<User>>(mockUserStore.Object, null, null, null, null, null, null, null).Object;
+            var mockUserManager = new Mock<UserManager<User>>(
+              new Mock<IUserStore<User>>().Object,
+              new Mock<IOptions<IdentityOptions>>().Object,
+              new Mock<IPasswordHasher<User>>().Object,
+              new IUserValidator<User>[0],
+              new IPasswordValidator<User>[0],
+              new Mock<ILookupNormalizer>().Object,
+              new Mock<IdentityErrorDescriber>().Object,
+              new Mock<IServiceProvider>().Object,
+              new Mock<ILogger<UserManager<User>>>().Object);
             var mockEncryptService = new Mock<IEncryptService>().Object;
             var mockLogger = new Mock<ILogger<EmailService>>().Object;
 
@@ -835,7 +977,7 @@ namespace TBIApp.UnitTesting.Service.EmailServiceTest
             using (var assertContext = new TBIAppDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailDTOMapper, 
-                    mockDecodeService, mockLogger,null, mockEncryptService);
+                    mockDecodeService, mockLogger,mockUserManager.Object, mockEncryptService);
 
                 var result = await sut.GetAllEmailsPagesAsync();
 
